@@ -1,0 +1,352 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #0b3d87;
+}
+a:hover {
+    text-decoration: underline;
+}
+.htmloverall {
+    background-color: #ededed ;
+}
+.header {
+    background-color: #ededed;
+    /* background: linear-gradient(4deg, rgba(228,229,231,1) 0%, rgba(255,255,255,1) 35%, rgba(229,231,232,1) 100%);*/
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    font-size: 0.8rem;
+}
+.topmenu {
+    float: right;
+    padding: 10px;
+}
+.topmenu span {
+    margin-right: 15px;
+    padding-top: 20px;
+}
+.topmenu span:nth-child(1){
+    color: #63605e;
+}
+.topmenu a {
+    color: #0b3d87;
+    text-decoration: none;
+}
+.topmenu a:hover {
+    text-decoration: underline;
+}
+.bottommenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    border-bottom: rgba(175,200,246,0.5) solid 1px;
+}
+.bottommenu a {
+    position: relative;
+    top: 5px;
+    padding: 5px;
+    padding-top: 10px;
+    text-decoration: none;
+    margin-left: -4px;
+    color: #0b3d87;
+    background: linear-gradient(180deg, rgba(228,231,231,0) 0%, rgba(175,200,246,0.2) 35%);
+    font-size: 0.8rem;
+    border-left: rgba(175,200,246,0.5) solid 1px;
+    border-bottom: rgba(175,200,246,0.5) solid 1px;
+    border-right: rgba(175,200,246,0.5) solid 1px;
+}
+.bottommenu a:hover {
+    text-decoration: underline;
+    
+}
+.bottommenu a:nth-child(1) {
+    background: none;
+    background-color: white;
+    border-bottom: none;
+}
+.bottommenu a:nth-child(1):hover {
+text-decoration: none;
+}
+.bottommenu .second a:nth-child(1){
+    background: none;
+    background-color: white;
+    border-bottom: none;
+}
+.bottommenu .second a:nth-child(1):hover{
+    text-decoration: none;
+}
+.bottommenu .first {
+    margin-left: 4px;
+    margin-bottom: -4px;
+}
+.bottommenu .second {
+margin-left: auto;
+margin-right: 4px;
+margin-bottom: -4px;
+}
+.bottommenu button {
+ width: 350px;
+ height: 30px;
+ margin: 3px;
+ margin-right: 20px;
+ align-self: center;
+ background-color: white;
+ text-align: left;
+ border: solid grey 1px;
+}
+.bottommenu button img {
+   margin-left: 280px;
+}
+.aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height:1600px;
+    background-color: #ededed;
+   /* background: linear-gradient(4deg, rgba(228,229,231,1) 0%, rgba(255,255,255,1) 35%, rgba(229,231,232,1) 100%);*/
+}
+.aside img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.aside h1 {
+    margin-left: 25px;
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.aside h2 {
+    display: block;
+    text-align: center;
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-top: 1px;
+}
+.aside ul {
+    margin-top: 25px;
+    padding-left: 0;
+    margin-left: 25px;
+}
+.aside .firstUl {
+    margin-top: 40px;
+}
+.aside li {
+    list-style: none;
+    text-align: left;
+}
+.aside a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #0b3d87;
+}
+.aside a:hover {
+    text-decoration: underline;
+}
+.mainoverall {
+    width: 90%;
+    position: absolute;
+    top: 78px;
+    left: 10%;
+    font-size: 0.8rem;
+    /*border-bottom: rgba(175,200,246,0.5) solid 1px;*/
+    border-left: rgba(175,200,246,0.5) solid 1px; ;
+}
+.mainoverall .textpart {
+    width: 98%;
+    margin-left: 20px;
+}
+.textpart h1 {
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.aside .listTitle {
+    display: block;
+    margin-right: 60px;
+    color: #54595d;
+    border-bottom: #54595d 1px solid;
+}
+.asideUl li:nth-child(2) {
+    padding-top: 10px;
+}
+.underh1 {
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+.textbox {
+    width: 80%;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    border: solid black 1px;
+    border-left: 13px solid orange;
+    background-color: #ededed ;
+}
+.textbox img {
+    position: relative;
+    top: 11px;
+    left: 10px;
+   /* display: block;*/
+    float: left;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.textbox p {
+    align-self: center;
+    margin-left: 100px;
+    line-height: 20px;
+    font-size: 0.9rem;
+}
+#undertext {
+    font-size: 0.8rem;
+}
+.textbox a {
+    text-decoration: none;
+}
+.textbox a:hover {
+    text-decoration: underline;
+}
+#maintext {
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+#maintext a {
+    text-decoration: none;
+}
+#maintext a:hover {
+    text-decoration: underline;
+}
+.textbox2 {
+    width: 290px;
+    background-color: #ededed;
+    border: solid black 1px;
+}
+/*Příklad použití pro listy 1 a potom 1.1 a potom 1.1.1 atd....*/
+.textbox2 ol li {display:block;} /* hide original list counter */
+.textbox2 ol > li:first-child {counter-reset: item;} /* reset counter */
+.textbox2 ol > li {counter-increment: item; position: relative;} /* increment counter */
+.textbox2 ol > li:before {content:counters(item, ".") ". "; position: absolute; margin-right: 100%; right: 10px;} /* print counter */
+
+.textbox2 p {
+    text-align: center;
+}
+.textbox2 a {
+    color: #0b3d87;
+    text-decoration: none;
+}
+.textbox2 a:hover {
+    text-decoration: underline;
+}
+.textbox2 li {
+    padding: 3px;
+}
+.textpart2 h2 {
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-size: 1.3rem;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.textpart2 h2 a {
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+#redlink {
+    color: red;
+    text-decoration: none;
+}
+#redlink:hover {
+    text-decoration: underline;
+}
+sup {
+    font-size: 0.7rem;
+    line-height: normal;
+}
+.textpart2 h3 a {
+    font-size: 0.8rem;
+    padding-left: 10px;
+    font-weight: normal;
+}
+.textpart2 h3 {
+   font-size: 1rem;
+}
+.textpart2 li {
+font-size: 0.9rem;
+line-height: 22px;
+}
+.textpart3 {
+   /* display: flex; - Dalo by se použít ale museli by být 4 <ol> elementy a "start" atribut (3,6,9)*/
+    column-count: 4;
+   /* height: 400px;*/
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.textpart3 li {
+    font-size: 0.8rem;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.textpart3 li:nth-child(1) {
+    position: relative;
+    top: -15px;
+}
+.textpart4 h2 {
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    font-size: 1.3rem;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.textpart4 h2 a {
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+.textpart4 li {
+    font-size: 0.9rem;
+    line-height: 22px;
+}
+.finaltext {
+    font-size: 0.9rem;
+    line-height: 32px;
+    border: solid grey 1px;
+    background-color: #ededed;
+    margin-bottom: 25px;
+   
+}
+.finaltext a {
+    padding: 10px 0 10px 8px;
+}
+.footer {
+    border-top: rgba(175,200,246,0.5) solid 1px;
+    background-color: #ededed;
+    padding-bottom: 61px;
+}
+.footer p {
+    word-spacing: 3px;
+    padding: 0 0 0 20px;
+}
+.footer a {
+    word-spacing: 3px;
+    padding: 0 0 0 20px;
+}
+.footer a:nth-child(1) {
+    padding-inline-start: 0;
+}
+
+
