@@ -1,0 +1,36 @@
+* {
+    font-family: metropolis,Helvetica,Arial,sans-serif;
+    font-size: 0.8rem;
+}
+a {
+
+}
+
+a:hover {
+
+}
+
+@media screen and (min-width: 990px) {
+
+header {
+    width: 100%;
+}
+.navbar {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+.navbar ul li {
+    list-style-type: none;
+    padding: 15px 15px;
+}
+
+
+
+}
