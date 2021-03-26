@@ -1,3 +1,5 @@
+                                                                                /*Obecné nastavení */
+
 @font-face {
     font-family: 'AnotherWetShabby';
     src: url('../fonts/AnotherWetShabbyTrial.woff') format('woff');
@@ -19,6 +21,7 @@ a:hover {
 body {
     margin: 0;
 }
+                                                                                /*Header mobil */
 .logo {
     margin-left: 20px;
 }
@@ -93,6 +96,7 @@ header {
     transition: all .5s;
     color: orange;
 }
+                                                                                /*Main mobil */
 .flex_overall {
     display: none;
 }
@@ -102,16 +106,24 @@ header {
 .grid_part {
     display: none;
 }
+.grid_part1 {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
 .grid_part1 h2 {
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
     color: black;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .grid_part1 p {
     text-align: center;
     font-size: 1.5rem;
     color: black;
+    margin-left: 55px;
+    margin-right: 55px;
 }
 .grid_part1 a:hover {
 text-decoration: none;
@@ -121,8 +133,8 @@ text-decoration: none;
     font-size: 3rem;
 }
 
-
-/* screen větší než 990 px - tablet a malý PC (tělo 80%)*/
+                                                                                /*Header web */
+                                                            /* screen větší než 990 px - tablet a malý PC (tělo 80%)*/
 @media screen and (min-width: 990px) {
 
 .navbar {
@@ -152,6 +164,7 @@ text-decoration: none;
     border-right: solid orange 1px;
     
 }
+                                                                                /*Main web */
 .flex_overall {
     position: relative;
     margin: 0 auto;
@@ -245,21 +258,26 @@ text-decoration: none;
     margin-top: 0;
     color: #fff;
 }
+.grid_part1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .grid_part1 h2 {
     text-align: initial;
 }
 .grid_part1 p {
     text-align: initial;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .grid_part1 a:hover {
 text-decoration: none;
 }
-                                    /* V mobilním zobrazení si nejsem jistý jestli je text pole <a> LINK !!! Ověřit !!!*/
-                                    /*V mobilní verzi upravit margion left a right a top a bottom*/
-                                                 /* Zjistit jak se dělají HTML sekce a udělat je !!!!!!*/
-}
 
-/* screen větší než 1430 px - největší možný screen (PC) tělo 60%*/
+                                
+}
+                                                                                /*Verze pro web - široký screen */
+                                                                /* screen větší než 1430 px - největší možný screen (PC) tělo 60%*/
 @media screen and (min-width: 1430px) {
 
 .navbar {
@@ -280,7 +298,7 @@ text-decoration: none;
 }
 
 }
-/* screen větší než 1700 px - poue kvůli header image*/
+                                                                            /* screen větší než 1700 px - poue kvůli header image*/
 @media screen and (min-width: 1700px) {
 .bg_image {
     background-position: 0 -120px;
