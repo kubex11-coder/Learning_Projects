@@ -132,6 +132,45 @@ text-decoration: none;
     font-weight: normal;
     font-size: 3rem;
 }
+.form_overall {
+    width: 100%;
+    height: 444px;
+    background-color: #fae1b1;
+    background-image: url(../images/background_form.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.title_part {
+    width: 40%;
+    /*position: relative;*/
+    margin: 10px auto 10px auto;
+}
+.title_part img {
+    display: block;
+    max-width: 100%;
+    position: relative;
+    top: 100px;
+    margin: 0px auto 0px auto;
+}
+.title_part h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+.form_part {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.form_part p, b {
+    font-family: lora,Georgia,serif;
+    font-size: 18px;
+    line-height: 26px;
+    
+}
+
+
 
                                                                                 /*Header web */
                                                             /* screen větší než 990 px - tablet a malý PC (tělo 80%)*/
