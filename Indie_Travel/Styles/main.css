@@ -172,10 +172,10 @@ text-decoration: none;
 
 
 
-                                                                                /*Header web */
+                                                                                
                                                             /* screen větší než 990 px - tablet a malý PC (tělo 80%)*/
 @media screen and (min-width: 990px) {
-
+                                                            /*Header web */
 .navbar {
     width: 80%;
     height: 90px;
@@ -342,6 +342,15 @@ text-decoration: none;
 .bg_image {
     background-position: 0 -120px;
     background-size: 100%;
+}
+                                                                             /* screen menší než 460 px - pro úpravu velikosti textu pro malé mobily*/
+}
+@media screen and (max-width: 460px) {
+    .title_part h3 {
+        font-size: 20px;
+}
+    .form_part p, b {
+        font-size: 16px;
 }
 
 }
