@@ -134,7 +134,7 @@ text-decoration: none;
 }
 .form_overall {
     width: 100%;
-    height: 444px;
+    height: 544px;
     background-color: #fae1b1;
     background-image: url(../images/background_form.svg);
     background-repeat: no-repeat;
@@ -166,9 +166,34 @@ text-decoration: none;
 .form_part p, b {
     font-family: lora,Georgia,serif;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 18px;
     
 }
+.form {
+    width: 60%;
+    margin: 0 auto;
+}
+.form input {
+    display: block;
+    width: 90%;
+    margin: 10px auto 10px auto;
+    line-height: 46px;
+    border: none;
+    border-radius: 23px;
+    text-align: center;
+    font-size: 16px;
+    font-family: lora,Georgia,serif;
+    color: #a7a9ac;
+}
+#subscribe_button {
+    display: block;
+    width: 170px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+
 
 
 
@@ -312,7 +337,20 @@ text-decoration: none;
 .grid_part1 a:hover {
 text-decoration: none;
 }
-
+.form_overall {
+    height: 444px;
+}
+.form {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.form input {
+    width: 48%;
+    /*margin: 10px auto 10px auto;*/
+    
+}
                                 
 }
                                                                                 /*Verze pro web - široký screen */
@@ -334,6 +372,9 @@ text-decoration: none;
 .grid_overall {
     width: 60%;
 
+}
+.form {
+    width: 40%;
 }
 
 }
