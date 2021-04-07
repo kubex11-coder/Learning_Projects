@@ -37,6 +37,8 @@ header {
     width: 100%;
     height: 100%;
     background-image: url(../Images/home-banner-nepal.jpg);
+   /* background-color: #a7a9ac;
+    background-blend-mode: multiply; - také možnost jak zastínit bg_image*/
     background-repeat: no-repeat;
     background-position: top center;
     position: relative;
