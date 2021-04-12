@@ -210,9 +210,41 @@ text-decoration: none;
     border: none;
     text-decoration: none;
 }
-
-
-
+.latest_post_title {
+    font-family: metropolis,Helvetica,Arial,sans-serif;
+    display: block;
+    height: 100px;
+    text-align: center;
+    
+}
+.latest_post_title p, .latest_post_title span {
+    font-size: 30px;
+}
+.latest_post_title p span {
+    font-weight: bold;
+}
+.latest_post_title .smaller, .smaller span, .smaller a  {
+    font-size: 18px;
+}
+.latest_post_title a {
+    text-decoration: none;
+    color: black;
+}
+.smaller a .arrow_link {
+    font-size: 40px;
+    font-weight: bold;
+    color: cyan;
+    position: relative;
+    top: 7px;
+    left: 6px;
+}
+.smaller a:hover {
+    color: darkblue;
+}
+.smaller a:hover > .arrow_link {
+    color: orange;
+    transition: .5s;
+}
 
                                                                                 
                                                             /* screen větší než 990 px - tablet a malý PC (tělo 80%)*/
@@ -245,7 +277,8 @@ text-decoration: none;
     border-right: solid orange 1px;
     
 }
-                                                                                /*Main web */
+                         
+/*Main web */
 .flex_overall {
     position: relative;
     margin: 0 auto;
@@ -365,9 +398,43 @@ text-decoration: none;
 }
 .form input {
     width: 48%;
-    /*margin: 10px auto 10px auto;*/
+    /*margin: 10px auto 10px auto;*/ 
+}
+.latest_post_title {
+    display: flex;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.latest_post_title p {
+    margin: 0 40px;
+}
+.latest_post_main {
+    display: flex;
+    height: 530px;
+    width: 80%;
+    margin: 0 auto;
+}
+.left_aside {
+    width: 33%;
     
 }
+.right_aside {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.flex_row {
+    display: inline-block;
+}
+.flex_row img {
+    float: left;
+}
+/*pokračovat odsud - udělat images responzivní aby se změnšili pro nějaký width a doladit texty plus mobil design*/
                                 
 }
                                                                                 /*Verze pro web - široký screen */
@@ -393,7 +460,13 @@ text-decoration: none;
 .form {
     width: 40%;
 }
+.latest_post_title {
+    width: 60%;
+}
 
+.latest_post_main {
+    width: 60%;
+}
 }
                                                                             /* screen větší než 1700 px - poue kvůli header image*/
 @media screen and (min-width: 1700px) {
@@ -409,6 +482,5 @@ text-decoration: none;
 }
     .form_part p, b {
         font-size: 16px;
-}
-
+    }
 }
