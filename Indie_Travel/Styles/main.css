@@ -217,6 +217,9 @@ text-decoration: none;
     text-align: center;
     
 }
+.latest_post_main img {
+    max-width: 100%;
+}
 .latest_post_title p, .latest_post_title span {
     font-size: 30px;
 }
@@ -245,7 +248,64 @@ text-decoration: none;
     color: orange;
     transition: .5s;
 }
+.latest_post_main {
+    text-align: center;
+    display: block;
+}
+.left_aside {
+    margin-bottom: 40px;
+}
+.right_aside .flex_row {
+    margin-bottom: 40px;
+}
+.latest_post_main h3 {
+    font-family: metropolis,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: #cacaca;
+    font-size: 12px;
+}
+.latest_post_main .header_link {
+    font-family: metropolis,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    line-height: 25px;
+    margin-bottom: 10px;
+    letter-spacing: .2px;
+    text-decoration: none;
+}
+.latest_post_main .header_link:hover {
+    color: orange;
+    transition: all .5s;
+}
 
+.latest_post_main p {
+display: none;
+}
+.latest_post_main .buttons a {
+    position: relative;
+    top: 10px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: #fcf3df;
+    color: #1a2530;
+    border: 1px solid transparent;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    font-family: metropolis,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.latest_post_main .buttons a:hover {
+    border: orange 1px solid;
+    text-decoration: none;
+}
+.enter {
+    padding-top: 100px;
+}
                                                                                 
                                                             /* screen větší než 990 px - tablet a malý PC (tělo 80%)*/
 @media screen and (min-width: 990px) {
@@ -434,9 +494,33 @@ text-decoration: none;
 .flex_row img {
     float: left;
 }
-/*pokračovat odsud - udělat images responzivní aby se změnšili pro nějaký width a doladit texty plus mobil design*/
-                                
+.latest_post_main {
+    text-align: left;
 }
+.latest_post_main p {
+    position: relative;
+    left: 20px;
+    display: block;
+    font-family: metropolis,Helvetica,Arial,sans-serif;
+    color: #a7a9ac;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    }
+:is(.latest_post_main) h3, .header_link {
+    position: relative;
+    left: 20px;
+}
+.latest_post_main .buttons  {
+    position: relative;
+    left: 20px;
+}
+
+}
+/*pokračovat odsud - udělat images responzivní
+                                
+
                                                                                 /*Verze pro web - široký screen */
                                                                 /* screen větší než 1430 px - největší možný screen (PC) tělo 60%*/
 @media screen and (min-width: 1430px) {
