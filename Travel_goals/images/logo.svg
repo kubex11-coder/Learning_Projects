@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="600" height="400" viewBox="0 0 600 400" xml:space="preserve">
+<desc>Created with Fabric.js 4.2.0</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 300 200)" id="059fb185-66fa-4fd3-a00c-2c6418fdde2a"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-300" y="-200" rx="0" ry="0" width="600" height="400" />
+</g>
+<g transform="matrix(0 0 0 0 0 0)" id="12ee48ae-7470-4aef-a111-38131e4434f5"  >
+</g>
+<g transform="matrix(5.38 0 0 5.38 299.94 199.94)" id="e2f09e7c-f7c4-4f2e-ba55-63867f49636d"  >
+<circle style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(6,18,21); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  cx="0" cy="0" r="35" />
+</g>
+<g transform="matrix(7.54 0 0 5.67 300 200)" id="eb4e941a-365b-4a5f-af8c-dd8a4c50b2e7"  >
+<rect style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(63,193,221); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-37.4585" y="-19.4165" rx="0" ry="0" width="74.917" height="38.833" />
+</g>
+<g transform="matrix(0.79 0 0 0.79 300 162.11)" style="" id="4a54f412-cc80-49c5-bf8d-1808122bf6c8"  >
+		<text xml:space="preserve" font-family="Nanum Myeongjo" font-size="105" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-207.54" y="32.98" >TRAVEL</tspan></text>
+</g>
+<g transform="matrix(-0.79 0 0 -0.79 300 244.36)" style="" id="adbaaed9-02b9-444c-8d95-c16285876540"  >
+		<text xml:space="preserve" font-family="Nanum Myeongjo" font-size="105" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-182.62" y="32.98" >GOALS</tspan></text>
+</g>
+<g transform="matrix(6.59 0 0 0.23 300 200)" id="91ce707c-a159-4f6c-9b01-506aedae68d9"  >
+<rect style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(6,18,21); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-37.4585" y="-19.4165" rx="0" ry="0" width="74.917" height="38.833" />
+</g>
+<g transform="matrix(2.2 0 0 2.2 322 42)" id="2b81f32c-622c-4dfa-b9fb-dd4b4074d5a4"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(63,193,221); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-50, -50)" d="M 43.597 70.655 L 86.37700000000001 70.655 L 75.27 29.345 L 68.062 41.831 C 39.65 23.653 24.273 37.103 13.623 61.98 C 27.67 48.44 41.761 44.86 55.854 55.876 L 43.597 70.655 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(-2.2 0 0 -2.2 316.03 361.02)"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(63,193,221); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-50, -50)" d="M 43.597 70.655 L 86.37700000000001 70.655 L 75.27 29.345 L 68.062 41.831 C 39.65 23.653 24.273 37.103 13.623 61.98 C 27.67 48.44 41.761 44.86 55.854 55.876 L 43.597 70.655 z" stroke-linecap="round" />
+</g>
+</svg>
