@@ -24,10 +24,66 @@ a {
     background-position-x: -500px;
     background-blend-mode: multiply;
 }
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     align-items: flex-start;
+}
+.nav_menu{
+    display: none;
+}
+.nav_menu.active{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+
+
+
+nav ul li {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    list-style-type: none;
+}
+nav ul a {
+    color: white;
+    font-size: 2rem;
+}
+nav ul a:hover {
+    color: #19FA0A;
+}
+
+.mobile {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
 .welcome_text {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
+    position: relative;
+    top: 200px;
+}
+.welcome_text.active {
+    display: none;
 }
 .welcome_text h1 {
     font-size: 4rem;
@@ -37,56 +93,86 @@ a {
 }
 .welcome_text :is(p,a)  {
 color: white;
-
+font-weight: bold
+}
+.welcome_text a {
+font-size: 1.5rem;
+color: white;
+background-color: #19FA0A;
+letter-spacing: 2px;
+font-weight: bold;
+position: relative;
+border-radius: 20px;
+top: 25px;
+padding: 8px;
+}
+.welcome_text a:hover {
+    
+    background-color: #19FA0A;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: all .5s;
 }
 
 
 
-
+                                                        /* Min width 600px - Pro Tablety (notebooky) úprava*/
 
 @media (min-width: 600px) {
     .herobanner {
         background-position-x: center;
 }
 .welcome_text {
-    width: 40%;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
     position: relative;
-    left: 200px;
-    top: 100px;
+    top: 200px;
+}
+.mobile {
+right: 40px;
 }
 
-
-
 }
+                                                         /* Min width 1006px - Pro Tablety (notebooky) úprava*/
 @media (min-width: 1006px) {
     .herobanner {
         background-position-x: center;
 }
  nav {
      display: flex;
+     flex-direction: row;
      justify-content: space-between;
      align-items: center;
      width: 70%;
      margin: 0 auto;
  }
- nav ul {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- nav ul li {
-     list-style-type: none;
-     padding: 1rem;
-     margin-left: 30px;
- }
- nav ul a {
-     color: white;
-     font-size: 1.2rem;
- }
- .welcome_text {
-    top: 200px;
+ .nav_menu{
+     width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+ nav ul li {
+    list-style-type: none;
+    padding: .5rem;
+    margin-left: 10px;
+    background-color: transparent;
+}
+nav ul a {
+    right: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+ .mobile {
+     display: none;
+ }
 
+ .welcome_text {
+    width: 40%;
+    position: relative;
+    left: 200px;
+}
 
 }
