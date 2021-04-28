@@ -104,7 +104,7 @@ font-weight: bold;
 position: relative;
 border-radius: 20px;
 top: 25px;
-padding: 8px;
+padding: 8px 24px 8px 24px;
 }
 .welcome_text a:hover {
     
@@ -135,15 +135,46 @@ padding: 8px;
     clip-path: polygon(100% 43%, 100% 42%, 100% 100%, 0 100%, 0 100%, 0 100%, 0 0);
     text-align: center;
 }
+.other_sections h1 {
+font-size: 1.5rem;
+}
+.other_sections p {
+font-size: 1rem
+}
 .other_sections .section_text {
     position: relative;
     top: 20px;
 }
+.other_sections .section_text1 {
+    position: relative;
+    top: -10px;
+}
+
 .other_sections .section_text2 {
     position: relative;
     top: 140px;
 }
-
+.other_sections a {
+    font-size: 1.5rem;
+    color: black;
+    background-color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 20px;
+    top: 25px;
+    padding: 8px 32px 8px 32px;
+}
+.other_sections a:hover {
+    
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all .5s;
+}
+.other_sections .gallery_section a {
+    color: black;
+    background: linear-gradient(270deg, rgba(202,234,252,1) 0%, rgba(64,96,191,0.5494572829131652) 100%);
+}
 
 
                                                         /* Min width 600px - Pro Tablety (notebooky) úprava*/
@@ -162,6 +193,12 @@ padding: 8px;
 .mobile {
 right: 40px;
 }
+.other_sections h1 {
+    font-size: 2rem;
+    }
+    .other_sections p {
+    font-size: 1.2rem
+    }
 
 }
                                                          /* Min width 1006px - Pro Tablety (notebooky) úprava*/
@@ -211,15 +248,21 @@ nav ul a {
 .other_sections .section_text {
 position: relative;
 top: 80px;
-right: 400px;
+margin-right: 400px;
+margin-left: 10px;
 }
 .other_sections .section_text1 {
 position: relative;
 top: 10px;
-left: 400px;
+margin-left: 400px;
+margin-right: 10px;
 }
 .other_sections .section_text2 {
-right: 400px;
+margin-right: 400px;
+margin-left: 10px;
+}
+.other_sections h1 {
+    font-size: 2.5rem;
 }
 
 }
