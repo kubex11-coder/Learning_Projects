@@ -113,6 +113,36 @@ padding: 8px;
     border-radius: 20px;
     transition: all .5s;
 }
+.travel_section {
+    height: 800px;
+}
+.other_sections .goals_section {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(90deg, rgba(202,234,252,1) 0%, rgba(64,96,191,0.5494572829131652) 100%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 67%, 0 100%, 0 100%, 0 100%, 0 0);
+    text-align: center;
+}
+.other_sections .gallery_section {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.other_sections .contacts_section {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(270deg, rgba(202,234,252,1) 0%, rgba(64,96,191,0.5494572829131652) 100%);
+    clip-path: polygon(100% 43%, 100% 42%, 100% 100%, 0 100%, 0 100%, 0 100%, 0 0);
+    text-align: center;
+}
+.other_sections .section_text {
+    position: relative;
+    top: 20px;
+}
+.other_sections .section_text2 {
+    position: relative;
+    top: 140px;
+}
 
 
 
@@ -135,7 +165,7 @@ right: 40px;
 
 }
                                                          /* Min width 1006px - Pro Tablety (notebooky) úprava*/
-@media (min-width: 1006px) {
+@media (min-width: 1050px) {
     .herobanner {
         background-position-x: center;
 }
@@ -160,6 +190,7 @@ right: 40px;
     margin-left: 10px;
     background-color: transparent;
 }
+
 nav ul a {
     right: 0;
     color: white;
@@ -173,6 +204,22 @@ nav ul a {
     width: 40%;
     position: relative;
     left: 200px;
+}
+.travel_section {
+    height: 500px;
+}
+.other_sections .section_text {
+position: relative;
+top: 80px;
+right: 400px;
+}
+.other_sections .section_text1 {
+position: relative;
+top: 10px;
+left: 400px;
+}
+.other_sections .section_text2 {
+right: 400px;
 }
 
 }
