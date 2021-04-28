@@ -46,7 +46,7 @@ nav {
 
 nav ul li {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
     list-style-type: none;
 }
@@ -86,7 +86,7 @@ nav ul a:hover {
     display: none;
 }
 .welcome_text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     font-family: 'Special Elite', cursive;
     letter-spacing: 10px;
@@ -114,7 +114,43 @@ padding: 8px 24px 8px 24px;
     transition: all .5s;
 }
 .travel_section {
-    height: 800px;
+    height: 700px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.travel_section a {
+    font-size: 1.5rem;
+    color: black;
+    background: linear-gradient(270deg, rgba(202,234,252,1) 0%, rgba(64,96,191,0.5494572829131652) 100%);
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 20px;
+    top: 25px;
+    padding: 8px 32px 8px 32px; 
+}
+.travel_section a:hover {
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all .5s;
+}
+.travel_section .text_part {
+    margin: 10px;
+    padding-bottom: 20px;
+}
+#web_version {
+    display: none;
+}
+.travel_section iframe {
+    position: relative;
+    top: 100px;
+}
+.travel_section h1 {
+font-size: 1.5rem;
+}
+.travel_section p {
+font-size: 1rem;
 }
 .other_sections .goals_section {
     width: 100%;
@@ -193,12 +229,19 @@ font-size: 1rem
 .mobile {
 right: 40px;
 }
+#mobile_version {
+    display: none;
+}
+#web_version {
+    display: inline-block;
+}
 .other_sections h1 {
     font-size: 2rem;
-    }
-    .other_sections p {
+}
+.other_sections p {
     font-size: 1.2rem
-    }
+}
+
 
 }
                                                          /* Min width 1006px - Pro Tablety (notebooky) úprava*/
@@ -244,6 +287,24 @@ nav ul a {
 }
 .travel_section {
     height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.travel_section iframe {
+    margin: 0 auto;
+    position: relative;
+    top: 0px
+}
+.travel_section .text_part {
+position: relative;
+bottom: 50px;
+}
+.travel_section h1 {
+font-size: 2.5rem;
 }
 .other_sections .section_text {
 position: relative;
@@ -264,5 +325,8 @@ margin-left: 10px;
 .other_sections h1 {
     font-size: 2.5rem;
 }
+
+
+
 
 }
