@@ -113,13 +113,21 @@ top: 25px;
 padding: 8px 24px 8px 24px;
 }
 .welcome_text a:hover {
-    
     background-color: #19FA0A;
     border: 1px solid white;
     border-radius: 20px;
     transition: all .5s;
 }
+.travel_section_wp {
+    width: 100%;
+    height: 620px;
+    background: none;
+    clip-path: none;
+
+
+}
 .travel_section {
+
     font-family: 'Noto Serif JP', serif;
     height: 620px;
     display: block;
@@ -129,7 +137,7 @@ padding: 8px 24px 8px 24px;
 .travel_section a {
     font-size: 1.5rem;
     color: black;
-    background: linear-gradient(270deg, rgba(202,234,252,1) 0%, rgba(64,96,191,0.5494572829131652) 100%);
+    background: white;
     letter-spacing: 2px;
     font-weight: bold;
     position: relative;
@@ -143,8 +151,11 @@ padding: 8px 24px 8px 24px;
     transition: all .5s;
 }
 .travel_section .text_part {
+    position: relative;
+    top: 20px;
     margin: 10px;
     padding-bottom: 20px;
+    margin-top: 0;
 }
 #web_version {
     display: none;
@@ -154,6 +165,7 @@ padding: 8px 24px 8px 24px;
     top: 100px;
 }
 .travel_section h1 {
+    margin-top: 0;
 font-size: 1.5rem;
 }
 .travel_section p {
@@ -275,6 +287,7 @@ footer li {
     display: flex;
     position: absolute;
     bottom: 0;
+    padding: 0;
     justify-content: space-around;
 }
 .social_icons li {
@@ -310,6 +323,12 @@ right: 40px;
     list-style: none;
     padding-left: 30px;
     padding-right:15px;
+}
+.travel_section_wp {
+    width: 100%;
+    height: 650px;
+    clip-path: none;
+    background: none;
 }
 .travel_section {
     height: 650px;
@@ -401,6 +420,12 @@ nav ul a {
     width: 40%;
     position: relative;
     left: 200px;
+}
+.travel_section_wp {
+    width: 100%;
+    height: 500px;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 5%, 85% 5%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 95%, 15% 95%, 15% 85%, 0% 85%);
+    background: linear-gradient(270deg, rgba(202,234,252,1) 0%, rgba(64,96,191,0.5494572829131652) 100%);
 }
 .travel_section {
     height: 500px;
