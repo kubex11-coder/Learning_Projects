@@ -137,7 +137,7 @@ padding: 8px 24px 8px 24px;
 .travel_section a {
     font-size: 1.5rem;
     color: black;
-    background: white;
+    background: linear-gradient(270deg, rgba(202,234,252,1) 0%, rgba(64,96,191,0.5494572829131652) 100%);
     letter-spacing: 2px;
     font-weight: bold;
     position: relative;
@@ -435,6 +435,9 @@ nav ul a {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+.travel_section a {
+    background: white;
+}
 
 .travel_section iframe {
     margin: 0 auto;
@@ -452,7 +455,7 @@ font-size: 2.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 6px;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 h1 {
@@ -482,4 +485,11 @@ margin-left: 10px;
 }
 
 
+}
+
+                                                         /* Min width 1006px - Pro Tablety (notebooky) úprava*/
+@media (min-width: 1300px) {
+.image_gallery {
+    width: 70%;
+}
 }
