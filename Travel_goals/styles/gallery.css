@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Noto+Serif+JP:wght@200&family=Roboto+Condensed:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /*font-family: 'New Tegomin', serif;*/
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     align-items: flex-start;
+}
+.nav_menu{
+    display: none;
+}
+.nav_menu.active{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+nav ul li {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    list-style-type: none;
+}
+nav ul a {
+    color: black;
+    font-size: 2rem;
+}
+nav ul a:hover {
+    color: #19FA0A;
+}
+.mobile {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile .bar {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+}
+main {
+    margin-top: 50px;
+}
+
+                                                        /* Min width 600px - Pro Tablety (notebooky) úprava*/
+                                                     
+@media (min-width: 600px) {
+
+}
+
+
+                                                         /* Min width 1006px - Pro Tablety (notebooky) úprava*/
+@media (min-width: 1050px) {
+nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+}
+.nav_menu{
+        width: 50%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+}
+nav ul li {
+    list-style-type: none;
+    padding: .5rem;
+    margin-left: 10px;
+    background-color: transparent;
+}
+
+nav ul a {
+    right: 0;
+    color: black;
+    font-size: 1.2rem;
+}
+ .mobile {
+     display: none;
+ }
+
+}
