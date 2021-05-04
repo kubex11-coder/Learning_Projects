@@ -63,85 +63,13 @@ nav ul a:hover {
     background-color: black;
     border-radius: 10px;
 }
-.checked {
-    color: #19FA0A;
-    text-decoration: underline;
-}
 main {
     margin-top: 50px;
-}
-form ul {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-}
-form li {
-    list-style: none;
-    width: 100%;
-}
-form label {
-    display: inline-block;
-    width: 300px;
-    text-align: center;
-    
-}
-input {
-    width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
-    font-family: 'New Tegomin', serif;
-    font-size: 1.2rem;
-    color: black;
-    background-color: #c6fcbd;
-    border-radius: 10px;
-    padding: 0;
-}
-
-.textfield {
-    height: 80px;
-    margin-top: 20px;
-    overflow: auto;
-}
-form button {
-    text-align: center;
-    padding: 15px 35px;
-    border: 2px solid black;
-    background-color: #19FA0A;
-    font-family: 'New Tegomin', serif;
-    border-radius: 25px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-form button:hover {
-    background-color: white;
 }
 
                                                         /* Min width 600px - Pro Tablety (notebooky) úprava*/
                                                      
 @media (min-width: 600px) {
-form ul {
-        width: 500px;
-        margin: 0 auto;
-        position: relative;
-        right: 30px;
-}
-form label {
-    width: 120px;
-    text-align: end;
-    display: inline-block;
-}
-input {
-    width: 300px;
-    height: 35px;
-}
-form button {
-    position: relative;
-    left: 60px;
-    top: 20px;
-   
-}
-
-
 
 }
 
