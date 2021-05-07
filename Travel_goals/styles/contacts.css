@@ -104,8 +104,10 @@ font-size: 1.2rem;
     list-style: none;
     font-weight: 600;
 }
+
 form h1 {
     text-align: center;
+    color: #19FA0A;
 }
 form ul {
     width: 100%;
@@ -123,21 +125,31 @@ form label {
     
 }
 input {
-    width: 100%;
+    width: 80%;
     height: 50px;
+    margin: 0 auto;
     margin-bottom: 10px;
     font-family: 'New Tegomin', serif;
     font-size: 1.2rem;
     color: black;
-    background-color: #c6fcbd;
+    background-color: white;
     border-radius: 10px;
     padding: 0;
 }
+.labeltextfield {
+position: relative;
+bottom: 0px;
 
+}
 .textfield {
-    height: 80px;
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
     margin-top: 20px;
     overflow: auto;
+    border-radius: 10px;
+    font-family: 'New Tegomin', serif;
+    font-size: 1.2rem;
 }
 form button {
     text-align: center;
@@ -197,6 +209,14 @@ form ul {
         margin: 0 auto;
         position: relative;
         right: 60px;
+}
+.textfield {
+    width: 300px;
+}
+.labeltextfield {
+    position: relative;
+    bottom: 30px;
+    
 }
 form label {
     width: 120px;

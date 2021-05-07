@@ -284,6 +284,7 @@ footer li {
 }
 .social_icons {
     width: 100%;
+    height: 50px;
     display: flex;
     position: absolute;
     bottom: 0;
@@ -292,6 +293,10 @@ footer li {
 }
 .social_icons li {
     list-style: none;
+}
+.social_icons img:hover {
+    width: 45px;
+    height: 45px;
 }
 
                                                                                                                
