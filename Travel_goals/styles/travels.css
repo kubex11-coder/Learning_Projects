@@ -72,9 +72,7 @@ nav ul a:hover {
 .checked.active {
 display: none;
 }
-section {
 
-}
 .intro_wrapper {
     width: 100%;
     background-image: url(../images/background_travel_1.jpg);
@@ -137,10 +135,13 @@ main {
 .travel_intro :is(h1,p) {
     padding: 0 20px;
 }
+
 .button {
+    display: inline-block;
     font-weight: bold;
     color: black;
     padding: 10px 35px;
+    margin: 20px 0;
     background: linear-gradient(270deg, rgba(202,234,252,1) 0%, rgba(64,96,191,0.5494572829131652) 100%);
     border-radius: 25px;
 }
