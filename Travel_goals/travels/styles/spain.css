@@ -67,8 +67,8 @@ nav ul a:hover {
 .intro_wrapper {
     width: 100%;
     background-image: url(../images/spain_intro.JPG);
-    background-color: grey;
-    background-blend-mode:multiply;
+    /*background-color: grey;
+    background-blend-mode:multiply;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -80,7 +80,7 @@ nav ul a:hover {
     text-align: center;
 }
 .intro h1 {
-    color: whitesmoke;
+    color: black;
     font-family: 'Shadows Into Light', cursive;
     font-weight: bold;
     letter-spacing: 20px;
@@ -93,16 +93,21 @@ nav ul a:hover {
     margin-top: 0;
     letter-spacing: 10px;
     font-size: 2.2rem;
-    color: whitesmoke;
+    color: black;
 }
 main {
     margin-top: 50px;
     margin-bottom: 50px;
     background-image: url(../images/background-travel.jpg);
+    /*background-color: grey;
+    background-blend-mode: multiply;*/
     background-position: center;
+    background-attachment: fixed;
+    color: black;
 }
 .overall_main {
     padding-top: 50px;
+    padding-bottom: 25px;
     text-align: center;
 }
 main h1 {
@@ -132,9 +137,9 @@ main p {
     align-items: center;
 }
 .other_travels a {
-    color: white;
+    color: black;
     padding: 10px 35px;
-    background-color: black;
+    background: transparent;
     margin: 15px;
     border-radius: 25px;
     border: 1px solid black
@@ -144,6 +149,21 @@ main p {
     background-color: #19FA0A;
 }
 .visited {
+    display: none;
+}
+.photos_gallery img {
+padding: 15px;
+filter: grayscale(100%);
+transition: 1s;
+}
+.photos_gallery img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+iframe {
+    margin: 25px auto;
+}
+#web_version {
     display: none;
 }
 footer {
@@ -187,7 +207,8 @@ footer li {
         letter-spacing: 15px;
     }
     main {
-        background-size: contain;
+        /*background-size: contain;*/
+        background-repeat: no-repeat;
     }
     .overall_main {
         width: 80%;
@@ -206,7 +227,12 @@ footer li {
     }
    
     
-    
+    #web_version {
+        display: block;
+    }
+    #mobile_version {
+        display: none;
+    }
     
     footer {
         height: 150px;
@@ -251,7 +277,7 @@ footer li {
         letter-spacing: 25px;
     }
     .overall_main {
-        width: 70%;
+        width: 60%;
     }
    
 
