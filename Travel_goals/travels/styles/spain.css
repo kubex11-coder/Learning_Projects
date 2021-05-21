@@ -153,11 +153,11 @@ main p {
 }
 .photos_gallery img {
 padding: 15px;
-filter: grayscale(100%);
+/*filter: grayscale(100%);*/
 transition: 1s;
 }
 .photos_gallery img:hover {
-    filter: grayscale(0%);
+    /*filter: grayscale(0%);*/
     transform: scale(1.1);
 }
 iframe {
