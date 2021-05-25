@@ -71,7 +71,7 @@ nav ul a:hover {
     background-blend-mode:multiply;*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: left;
+    background-position-x: right;
     background-position-y: center;
     height: 500px;
 }
