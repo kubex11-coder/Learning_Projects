@@ -90,7 +90,7 @@ display: none;
 }
     
 .intro h1 {
-color: white;
+color: whitesmoke;
 font-family: 'Shadows Into Light', cursive;
 font-weight: bold;
 letter-spacing: 20px;
@@ -103,7 +103,7 @@ font-family: 'Shadows Into Light', cursive;
 margin-top: 0;
 letter-spacing: 10px;
 font-size: 2.2rem;
-color: white;
+color: whitesmoke;
 }
 
 main {
