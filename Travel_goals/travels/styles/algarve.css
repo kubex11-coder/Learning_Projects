@@ -2,27 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Girassol&family=Noto+Serif+JP:wght@200&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 * {
     box-sizing: border-box;
 }
 body {
     margin: 0;
     padding: 0;
-   font-family: 'Roboto Condensed', sans-serif;
+    /*font-family: 'New Tegomin', serif;*/
+    font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 2px;
     font-size: 20px;
 }
 a {
     text-decoration: none;
 }
-
 nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
      align-items: flex-start;
-     
 }
 .nav_menu{
     display: none;
@@ -65,19 +64,11 @@ nav ul a:hover {
     background-color: black;
     border-radius: 10px;
 }
-.checked {
-    color: #0573ad;
-    text-decoration: underline;
-}
-.checked.active {
-display: none;
-}
-
 .intro_wrapper {
     width: 100%;
-    background-image: url(../images/background_travel_1.jpg);
-    background-color: grey;
-    background-blend-mode:multiply;
+    background-image: url(../images/austria_intro.jpg);
+    /*background-color: grey;
+    background-blend-mode:multiply;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -88,85 +79,93 @@ display: none;
     margin-top: 60px;
     text-align: center;
 }
-    
 .intro h1 {
-color: whitesmoke;
-font-family: 'Shadows Into Light', cursive;
-font-weight: bold;
-letter-spacing: 20px;
-font-size: 4.2rem;
-margin-bottom: 0;
-margin-top: 100px;
+    color: whitesmoke;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    letter-spacing: 20px;
+    font-size: 4.2rem;
+    margin-bottom: 0;
+    margin-top: 100px;
 }
 .intro h3 {
-font-family: 'Shadows Into Light', cursive;
-margin-top: 0;
-letter-spacing: 10px;
-font-size: 2.2rem;
-color: whitesmoke;
-}
-
-main {
-    margin-top: 40px;
-    display: block;
-    
-}
- .travel_intro {
-     text-align: center;
-     width: 100%;
-     padding-top: 20px;
-}
-.travel_intro h1 {
-    color: #0573ad;
-}
-
-#twenty h1 {
-    color: #19FA0A;
-}
-
-#nineteen h1 {
-    color: blueviolet;
-}
-
-#eightteen h1 {
-
-    color: brown;
-}
-
-.travel_intro :is(h1, a) {
     font-family: 'Shadows Into Light', cursive;
+    margin-top: 0;
+    letter-spacing: 10px;
+    font-size: 2.2rem;
+    color: whitesmoke;
 }
-.travel_intro p {
-    font-size: .8rem;
-   
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url(../images/background-travel.jpg);
+    /*background-color: grey;
+    background-blend-mode: multiply;*/
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
 }
-.travel_intro .second_title {
-    font-size: 1rem;
-   font-weight: bolder;
+.overall_main {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
 }
-.travel_intro :is(h1,p) {
-    padding: 0 20px;
-}
-
-.button {
-    display: inline-block;
+main h1 {
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    margin-top: 75px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+main h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2;
+}
+main p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.other_travels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.other_travels a {
     color: black;
     padding: 10px 35px;
-    margin: 20px 0;
-    border: 1px white solid;
-    background: linear-gradient(270deg, rgba(202,234,252,1) 0%, rgba(64,96,191,0.5494572829131652) 100%);
-    border-radius: 25px;
-}
-.button:hover {
-    border: 1px solid black;
     background: transparent;
-    transition: all .5s;
+    margin: 15px;
+    border-radius: 25px;
+    border: 1px solid black
 }
-.travel_intro img {
-    margin-top: 35px;
+.other_travels a:hover {
+    border: white 1px solid;
+    background-color: #19FA0A;
 }
-
+.visited {
+    display: none;
+}
+.photos_gallery img {
+padding: 15px;
+/*filter: grayscale(100%);*/
+transition: 1s;
+}
+.photos_gallery img:hover {
+    /*filter: grayscale(0%);*/
+    transform: scale(1.1);
+}
+iframe {
+    margin: 25px auto;
+}
+#web_version {
+    display: none;
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -175,8 +174,6 @@ footer {
     background-color: black;
     width: 100%;
     height: 180px;
-    margin-top: 100px;
-   
 }
 footer ul {
     display: flex;
@@ -192,31 +189,53 @@ footer li {
                                                         /* Min width 600px - Pro Tablety (notebooky) úprava*/
                                                      
 @media (min-width: 600px) {
-
-.intro {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 60px;
-}
-.intro_wrapper {
-    height: 650px;
-}
-.intro h1 {
-    font-size: 5.2rem;
-    letter-spacing: 35px;
-}
-
-.intro h3 {
-    font-size: 1.8rem;
-    letter-spacing: 15px;
-}
+    .intro {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    .intro_wrapper {
+        height: 650px;
+    }
+    .intro h1 {
+        font-size: 5.2rem;
+        letter-spacing: 35px;
+    }
+    
+    .intro h3 {
+        font-size: 1.8rem;
+        letter-spacing: 15px;
+    }
     main {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 40px;
-}
+        /*background-size: contain;*/
+        background-repeat: no-repeat;
+    }
+    .overall_main {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main h1 {
+        letter-spacing: 4px;
+        font-size: 2rem;
+    }
+    main h3 {
+        font-size: 1.7;
+    }
+    main p {
+        font-size: 1.5rem;
+    }
+   
+    
+    #web_version {
+        display: block;
+    }
+    #mobile_version {
+        display: none;
+    }
+    
     footer {
-        height: 90px;
+        height: 150px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -236,8 +255,34 @@ footer li {
 }
 
 }
-                                                        /* Min width 1050px - Pro Tablety (notebooky) úprava*/
+
+
+                                                         /* Min width 1006px - Pro Tablety (notebooky) úprava*/
 @media (min-width: 1050px) {
+    .intro_wrapper {
+      /* background-position-y: top;*/
+    }
+    .intro {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    .intro h1 {
+        font-size: 8.2rem;
+        letter-spacing: 75px;
+    }
+    
+    .intro h3 {
+        font-size: 3.2rem;
+        letter-spacing: 25px;
+    }
+    .overall_main {
+        width: 60%;
+    }
+   
+
+
+
     nav {
         display: flex;
         flex-direction: row;
@@ -268,50 +313,5 @@ nav ul a {
  .mobile {
      display: none;
  }
- .intro {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 60px;
-}
- main {
-     width: 70%;
-     margin: 0 auto;
-     margin-top: 40px;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
- }
- .intro h1 {
-    font-size: 8.2rem;
-    letter-spacing: 75px;
-}
-
-.intro h3 {
-    font-size: 3.2rem;
-    letter-spacing: 25px;
-}
-
-
-}
-                                                         /* Min width 1333px - Pro Tablety (notebooky) úprava*/
-@media (min-width: 1333px) {
-    
-     .travel_intro {
-         max-width: 50%;
-         height: 450px;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-     }
-     .text_part {
-        text-align: center;
-     }
-     .travel_intro .second_title {
-         font-size: 1.2rem;
-     }
-     .travel_intro p {
-        font-size: 1rem;
-    }
 
 }
