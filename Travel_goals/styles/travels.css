@@ -76,7 +76,7 @@ display: none;
 .intro_wrapper {
     width: 100%;
     background-image: url(../images/background_travel_1.jpg);
-    background-color: grey;
+    background-color: lightgrey;
     background-blend-mode:multiply;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ display: none;
 }
     
 .intro h1 {
-color: whitesmoke;
+color: yellow;
 font-family: 'Shadows Into Light', cursive;
 font-weight: bold;
 letter-spacing: 20px;
@@ -103,9 +103,21 @@ font-family: 'Shadows Into Light', cursive;
 margin-top: 0;
 letter-spacing: 10px;
 font-size: 2.2rem;
-color: whitesmoke;
+color: yellow
 }
-
+.year {
+    display: inline;
+    width: 100%;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+   
+}
+.year h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
 main {
     margin-top: 40px;
     display: block;
@@ -118,19 +130,6 @@ main {
 }
 .travel_intro h1 {
     color: #0573ad;
-}
-
-#twenty h1 {
-    color: #19FA0A;
-}
-
-#nineteen h1 {
-    color: blueviolet;
-}
-
-#eightteen h1 {
-
-    color: brown;
 }
 
 .travel_intro :is(h1, a) {
@@ -283,12 +282,12 @@ nav ul a {
      align-items: center;
  }
  .intro h1 {
-    font-size: 8.2rem;
+    font-size: 10.2rem;
     letter-spacing: 75px;
 }
 
 .intro h3 {
-    font-size: 3.2rem;
+    font-size: 5.2rem;
     letter-spacing: 25px;
 }
 
