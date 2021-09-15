@@ -105,6 +105,24 @@ nav ul a:hover {
 main {
     margin-top: 50px;
 }
+#web_version {
+    display: none;
+}
+#mega_version {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+.video {
+    width: 100%;
+    text-align: center;
+}
+.video h1 {
+    text-align: center;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -142,6 +160,32 @@ footer li {
         font-size: 1.8rem;
         letter-spacing: 15px;
     }
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .videos_overall {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    .video {
+        width: 50%;
+        text-align: center;
+    }
+    .video h1 {
+        text-align: center;
+    }
+    .video h1 {
+        display: block;
+    }
+    .video iframe {
+        margin: 10px auto;
+    }
+    
     
     
     footer {
@@ -213,5 +257,28 @@ nav ul a {
     font-size: 3.2rem;
     letter-spacing: 25px;
 }
+#mobile_version {
+    display: none;
+}
+#web_version {
+    display: inline-block;
+}
+
+}
+
+                                                        /* Min width 1400px - Pro notebooky mega screen úprava*/
+@media (min-width: 1400px) {
+#web_version {
+    display: none;
+}
+#mega_version {
+    display: inline-block;
+}
+
+
+
+
+
+
 
 }
