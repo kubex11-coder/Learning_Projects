@@ -76,7 +76,7 @@ display: none;
 .intro_wrapper {
     width: 100%;
     background-image: url(../images/background_travel_1.jpg);
-    background-color: lightgrey;
+    background-color: grey;
     background-blend-mode:multiply;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ display: none;
 }
     
 .intro h1 {
-color: yellow;
+color: whitesmoke;
 font-family: 'Shadows Into Light', cursive;
 font-weight: bold;
 letter-spacing: 20px;
@@ -103,7 +103,7 @@ font-family: 'Shadows Into Light', cursive;
 margin-top: 0;
 letter-spacing: 10px;
 font-size: 2.2rem;
-color: yellow
+color: whitesmoke;
 }
 .year {
     display: inline;
@@ -210,7 +210,7 @@ footer li {
     letter-spacing: 15px;
 }
     main {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 40px;
 }
@@ -274,7 +274,7 @@ nav ul a {
     margin-top: 60px;
 }
  main {
-     width: 70%;
+     width: 80%;
      margin: 0 auto;
      margin-top: 40px;
      display: flex;
