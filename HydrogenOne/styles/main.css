@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
+@font-face {
+    font-family: neon;
+    src: url(../fonts/marquee-moon/marquee\ moon.ttf);
+}
 
 * {
     margin: 0px;
@@ -13,15 +16,29 @@ h2{
 color: white;
 }
 .mobile_navbar {
-    display: block;
+
+display: block;
 height: 100px;
 line-height: 100px;
-color: rgb(90, 208, 238);
 text-align: center;
-font-family: 'Anton', sans-serif;
+
+}
+.mobile_navbar p {
+
+color: rgb(90, 208, 238);
+font-family: neon;
+/* font-family: 'Anton', sans-serif; */
 letter-spacing: 6px;
 word-spacing: 15px;
 font-size: 1.5rem;
+text-shadow: 
+  .1vw 0vw .25vw #91ebe9, .2vw 0vw .25vw #91ebe9, .4vw 0vw .25vw #91ebe9, 
+  .1vw 0vw   0vw #90e8f0, .2vw 0vw   0vw #90e8f0, .4vw 0vw   0vw #90e8f0,
+  .1vw 0vw  .1vw #90e8f0, .2vw 0vw  .1vw #90e8f0, .4vw 0vw  .1vw #90e8f0,
+  .1vw 0vw   2vw #90e8f0, .2vw 0vw   2vw #90e8f0, .4vw 0vw   2vw #90e8f0, 
+  .1vw 0vw   1vw #7ebcf2, .2vw 0vw   1vw #7ebcf2, .4vw 0vw   5vw #7ebcf2, 
+  .1vw 0vw   5vw #7ebcf2, .2vw 0vw  20vw #7ebcf2, .4vw 0vw  10vw #7ebcf2,
+  .1vw 0vw  10vw #7ebcf2, .2vw 0vw  30vw #7ebcf2, .4vw 0vw  10vw #7ebcf2;
 }
 
 .navbar {
@@ -94,17 +111,26 @@ body {
     .navbar a {
         text-decoration: none;
         color: rgb(90, 208, 238);
-        font-family: 'Anton', sans-serif;
+        font-family: neon;
         /* letter-spacing: 2px; */
     }
     .navbar a:hover {
-        color: white;
+        color: black;
+        text-shadow: 
+  .1vw 0vw .25vw #91ebe9, .2vw 0vw .25vw #91ebe9, .4vw 0vw .25vw #91ebe9, 
+  .1vw 0vw   0vw #90e8f0, .2vw 0vw   0vw #90e8f0, .4vw 0vw   0vw #90e8f0,
+  .1vw 0vw  .1vw #90e8f0, .2vw 0vw  .1vw #90e8f0, .4vw 0vw  .1vw #90e8f0,
+  .1vw 0vw   2vw #90e8f0, .2vw 0vw   2vw #90e8f0, .4vw 0vw   2vw #90e8f0, 
+  .1vw 0vw   1vw #7ebcf2, .2vw 0vw   1vw #7ebcf2, .4vw 0vw   5vw #7ebcf2, 
+  .1vw 0vw   5vw #7ebcf2, .2vw 0vw  20vw #7ebcf2, .4vw 0vw  10vw #7ebcf2,
+  .1vw 0vw  10vw #7ebcf2, .2vw 0vw  30vw #7ebcf2, .4vw 0vw  10vw #7ebcf2;
     }
     .leftside {
-        font-family: 'Anton', sans-serif;
+        font-family: neon;
         letter-spacing: 2px;
         font-size: 0.9rem;
         color: rgb(90, 208, 238);
+   
     }
 
 
