@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+
+}
+
+h2{
+color: white;
+}
+.mobile_navbar {
+    display: block;
+height: 100px;
+line-height: 100px;
+color: rgb(90, 208, 238);
+text-align: center;
+font-family: 'Anton', sans-serif;
+letter-spacing: 6px;
+word-spacing: 15px;
+font-size: 1.5rem;
+}
+
+.navbar {
+    display: none;
+}
+body {
+    background-color: black;
+}
+
+.herobanner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/Herobanner_370x600_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    }
+.nabidka {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.nabidky {
+    height: 300px;
+}
+.circle_img {
+    width: 300px;
+    clip-path: circle();
+}
+
+
+
+@media (min-width: 370px) {
+.herobanner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/Herobanner_430x600_1.png);
+    background-position: center;
+    }
+
+}
+
+
+@media (min-width: 430px) {
+   .mobile_navbar {
+       display: none;
+   }
+    .navbar {
+        width: 80%;
+        margin: 0 auto;
+        height: 100px;
+        color: rgb(90, 208, 238);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar ul {
+        display: flex;
+        /* width: 400px; */
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .navbar ul li {
+         padding: 0 15px; 
+         list-style: none;
+         font-size: 0.8rem;
+    }
+    .navbar a {
+        text-decoration: none;
+        color: rgb(90, 208, 238);
+        font-family: 'Anton', sans-serif;
+        /* letter-spacing: 2px; */
+    }
+    .navbar a:hover {
+        color: white;
+    }
+    .leftside {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        color: rgb(90, 208, 238);
+    }
+
+
+    .herobanner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/Herobanner_1000x600_1.png);
+    background-position: center;
+    }
+    .nabidka {
+        position: relative;
+        top: -50px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .nabidka_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .nabidky {
+        width: 400px;
+        height: 300px;
+    }
+    .circle_img {
+        width: 400px;
+    }
+
+}
+
+
+
+@media(min-width:1000px) {
+   
+    .navbar ul li {
+        padding: 0 30px; 
+        font-size: 1.2rem;
+      }
+      .navbar a {
+        letter-spacing: 2px;
+    }
+   .leftside {
+   font-size: 1.2rem;
+   letter-spacing: 4px;
+   } 
+   
+   
+    .herobanner {
+        height: 600px;
+        width: 100%;
+        background-image: url(../images/Herobanner_1400x600_1.png);
+        background-position: center;
+        }  
+     
+}
+
+@media(min-width:1400px) {
+    .navbar ul li {
+        padding: 0 40px; 
+        font-size: 1.5rem;
+       } 
+       .leftside {
+        font-size: 1.5rem;
+       }
+    
+    
+    .herobanner {
+        height: 600px;
+        width: 100%;
+        background-image: url(../images/Herobanner_1920x600_1.png);
+        background-position: center;
+        } 
+        
+}
+
