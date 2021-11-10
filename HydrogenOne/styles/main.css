@@ -9,28 +9,57 @@
     padding: 0px;
 }
 h1 {
-
+font-family: neon;
+font-size: 2.5rem;
+letter-spacing: 6px;
+color: rgb(90, 208, 238);
+margin-bottom: 100px;
+font-weight: normal;
 }
 
 h2{
 color: white;
 }
-.mobile_navbar {
 
-display: block;
-height: 100px;
-line-height: 100px;
-text-align: center;
-
+body {
+    background-color: black;
 }
-.mobile_navbar p {
 
-color: rgb(90, 208, 238);
+nav {
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     align-items: flex-start;
+}
+.rightside {
+    display: none;
+}
+.rightside.active{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0;
+    position: relative;
+    top: -10px;
+}
+.rightside a {
+    color: rgb(90, 208, 238);
+text-decoration: none;
 font-family: neon;
 /* font-family: 'Anton', sans-serif; */
 letter-spacing: 6px;
-word-spacing: 15px;
-font-size: 1.5rem;
+/* word-spacing: 6px; */
+font-size: 1.4rem;
+padding: 10px;
+}
+
+.rightside a:hover {
+color: white;
 text-shadow: 
   .1vw 0vw .25vw #91ebe9, .2vw 0vw .25vw #91ebe9, .4vw 0vw .25vw #91ebe9, 
   .1vw 0vw   0vw #90e8f0, .2vw 0vw   0vw #90e8f0, .4vw 0vw   0vw #90e8f0,
@@ -40,13 +69,58 @@ text-shadow:
   .1vw 0vw   5vw #7ebcf2, .2vw 0vw  20vw #7ebcf2, .4vw 0vw  10vw #7ebcf2,
   .1vw 0vw  10vw #7ebcf2, .2vw 0vw  30vw #7ebcf2, .4vw 0vw  10vw #7ebcf2;
 }
+.mobile {
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    width: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile .bar {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(90, 208, 238);
+    border-radius: 10px;
+}
 
-.navbar {
+
+.mobile_navbar {
+
+display: block;
+height: 100px;
+line-height: 100px;
+text-align: center;
+
+}
+.leftside_neon a {
+
+color: rgb(90, 208, 238);
+text-decoration: none;
+font-family: neon;
+/* font-family: 'Anton', sans-serif; */
+letter-spacing: 6px;
+word-spacing: 10px;
+font-size: 1.4rem;
+padding: 10px;
+text-shadow: 
+  .1vw 0vw .25vw #91ebe9, .2vw 0vw .25vw #91ebe9, .4vw 0vw .25vw #91ebe9, 
+  .1vw 0vw   0vw #90e8f0, .2vw 0vw   0vw #90e8f0, .4vw 0vw   0vw #90e8f0,
+  .1vw 0vw  .1vw #90e8f0, .2vw 0vw  .1vw #90e8f0, .4vw 0vw  .1vw #90e8f0,
+  .1vw 0vw   2vw #90e8f0, .2vw 0vw   2vw #90e8f0, .4vw 0vw   2vw #90e8f0, 
+  .1vw 0vw   1vw #7ebcf2, .2vw 0vw   1vw #7ebcf2, .4vw 0vw   5vw #7ebcf2, 
+  .1vw 0vw   5vw #7ebcf2, .2vw 0vw  20vw #7ebcf2, .4vw 0vw  10vw #7ebcf2,
+  .1vw 0vw  10vw #7ebcf2, .2vw 0vw  30vw #7ebcf2, .4vw 0vw  10vw #7ebcf2;
+}
+.leftside {
     display: none;
 }
-body {
-    background-color: black;
-}
+
+
+
 
 .herobanner {
     width: 100%;
@@ -57,6 +131,9 @@ body {
     background-size: cover;
     margin: 0px;
     }
+/* .herobanner.active {
+    display: none;
+} */
 .nabidka {
     display: block;
     align-items: center;
@@ -84,37 +161,43 @@ body {
 
 
 @media (min-width: 430px) {
-   .mobile_navbar {
+   .mobile {
        display: none;
    }
-    .navbar {
+   .leftside_neon {
+       display: none;
+   }
+    nav {
         width: 80%;
         margin: 0 auto;
         height: 100px;
         color: rgb(90, 208, 238);
         display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
     }
-    .navbar ul {
+    .rightside {
         display: flex;
         /* width: 400px; */
         justify-content: space-between;
         flex-wrap: nowrap;
     }
-    .navbar ul li {
-         padding: 0 15px; 
+    .rightside li {
+         padding: 0 10px; 
          list-style: none;
          font-size: 0.8rem;
     }
-    .navbar a {
+    .rightside a {
+        font-size: 0.8rem;
         text-decoration: none;
+        letter-spacing: 1px;
         color: rgb(90, 208, 238);
         font-family: neon;
         /* letter-spacing: 2px; */
     }
-    .navbar a:hover {
+    .rightside a:hover {
         color: black;
         text-shadow: 
   .1vw 0vw .25vw #91ebe9, .2vw 0vw .25vw #91ebe9, .4vw 0vw .25vw #91ebe9, 
@@ -125,14 +208,31 @@ body {
   .1vw 0vw   5vw #7ebcf2, .2vw 0vw  20vw #7ebcf2, .4vw 0vw  10vw #7ebcf2,
   .1vw 0vw  10vw #7ebcf2, .2vw 0vw  30vw #7ebcf2, .4vw 0vw  10vw #7ebcf2;
     }
+
     .leftside {
+        display: flex;
+    }
+    .leftside a {
+        
         font-family: neon;
+        text-decoration: none;
         letter-spacing: 2px;
         font-size: 0.9rem;
         color: rgb(90, 208, 238);
    
     }
-
+    .leftside a:hover {
+        color: black;
+        text-shadow: 
+  .1vw 0vw .25vw #91ebe9, .2vw 0vw .25vw #91ebe9, .4vw 0vw .25vw #91ebe9, 
+  .1vw 0vw   0vw #90e8f0, .2vw 0vw   0vw #90e8f0, .4vw 0vw   0vw #90e8f0,
+  .1vw 0vw  .1vw #90e8f0, .2vw 0vw  .1vw #90e8f0, .4vw 0vw  .1vw #90e8f0,
+  .1vw 0vw   2vw #90e8f0, .2vw 0vw   2vw #90e8f0, .4vw 0vw   2vw #90e8f0, 
+  .1vw 0vw   1vw #7ebcf2, .2vw 0vw   1vw #7ebcf2, .4vw 0vw   5vw #7ebcf2, 
+  .1vw 0vw   5vw #7ebcf2, .2vw 0vw  20vw #7ebcf2, .4vw 0vw  10vw #7ebcf2,
+  .1vw 0vw  10vw #7ebcf2, .2vw 0vw  30vw #7ebcf2, .4vw 0vw  10vw #7ebcf2;  
+    }
+    
 
     .herobanner {
     width: 100%;
@@ -141,8 +241,8 @@ body {
     background-position: center;
     }
     .nabidka {
-        position: relative;
-        top: -50px;
+        /* position: relative;
+        top: -50px; */
         width: 80%;
         margin: 0 auto;
     }
@@ -167,17 +267,21 @@ body {
 
 @media(min-width:1000px) {
    
-    .navbar ul li {
+    nav ul li a{
         padding: 0 30px; 
         font-size: 1.2rem;
       }
-      .navbar a {
+      nav a {
         letter-spacing: 2px;
     }
-   .leftside {
-   font-size: 1.2rem;
+   .leftside a {
+   font-size: 1.5rem;
    letter-spacing: 4px;
    } 
+   .rightside a {
+       font-size: 1.3rem;
+       letter-spacing: 2px;
+   }
    
    
     .herobanner {
@@ -190,12 +294,13 @@ body {
 }
 
 @media(min-width:1400px) {
-    .navbar ul li {
+    .rightside a{
         padding: 0 40px; 
         font-size: 1.5rem;
+        letter-spacing: 4px;
        } 
-       .leftside {
-        font-size: 1.5rem;
+       .leftside a{
+        font-size: 2rem;
        }
     
     
