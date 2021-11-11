@@ -22,6 +22,9 @@ color: rgb(90, 208, 238);
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 margin-top: 25px;
 }
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 body {
     background-color: black;
@@ -166,10 +169,31 @@ text-shadow:
     height: 200px;
     clip-path: circle();
 }
+.o_nas {
+    height: 750px;
+    background-image: url(../images/main_370x750.png);
+    text-align: center;
+}
+.textcenter {
+    display: block;
+ padding-top: 250px;
+}
+.textcenter h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+.textcenter p {
+    color: white;
+    padding: 0 25px;
+    letter-spacing: 2px;
+}
+.hesla {
+    display: none;
+}
 
 
 
-@media (min-width: 370px) {
+@media (min-width: 370px) {  /*------------------MOBILE BIGGER SCREEN-------------------------*/
 .herobanner {
     width: 100%;
     height: 600px;
@@ -180,11 +204,19 @@ text-shadow:
     font-size: 3.5rem;
     line-height: 500px;
 }
-
+.o_nas {
+    background-image: url(../images/main_430x750.png);
+}
+.textcenter {
+    padding-top: 300px;
+}
+.textcenter p {
+    font-size: 0.8rem;
+}
 }
 
 
-@media (min-width: 430px) {
+@media (min-width: 430px) {  /*------------------TABLET/ BIG MOBILE SCREEN-------------------------*/
    .mobile {
        display: none;
    }
@@ -284,12 +316,23 @@ text-shadow:
     .circle_img {
         width: 400px;
     }
+    .o_nas {
+        background-image: url(../images/main_1000x750.png); 
+    }
+    .textcenter {
+        padding-top: 350px;
+    }
+    .textcenter p{
+        font-size: 1.2rem;
+    padding: 0 60px;
+    letter-spacing: 2px;
+    }
 
 }
 
 
 
-@media(min-width:1000px) {
+@media(min-width:1000px) {  /*------------------SMALL PC SCREEN/TABLET SCREEN-------------------------*/
    
     nav ul li a{
         padding: 0 30px; 
@@ -319,10 +362,44 @@ font-size: 7rem;
 letter-spacing: 10px;
 
      }
+     .o_nas {
+        background-image: url(../images/main_1400x750.png);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .textcenter {
+        display: block;
+     padding-top: 300px;
+     padding-left: 150px;
+    }
+    .textcenter h1 {
+        color: white;
+        margin-bottom: 50px;
+    }
+    .textcenter p {
+        color: white;
+        padding: 0 ;
+        letter-spacing: 2px;
+    }
+    .hesla {
+        display: block;
+        padding-top: 350px;
+        padding-right: 230px;
+        padding-left: 70px;
+    }
+    .hesla h1 {
+        margin-bottom: 50px;
+        /* padding-right: 200px;
+        padding-left: 70px; */
+        font-size: 2rem;
+    }
      
 }
 
-@media(min-width:1400px) {
+@media(min-width:1400px) {       /*------------------  PC SCREEN-------------------------*/
     .rightside a{
         padding: 0 40px; 
         font-size: 1.5rem;
@@ -339,6 +416,25 @@ letter-spacing: 10px;
         background-image: url(../images/Herobanner_1920x600_nologo.png);
         background-position: center;
         } 
-        
+    .title {
+        line-height: 400px;
+     }
+    .o_nas {
+            background-image: url(../images/main_1920x750.png);
+            
+    }
+    .textcenter {
+        padding-left: 200px;
+    }
+    .hesla {
+        padding-right: 200px;
+    }
+}
+@media (min-width:1600px) {                /*------------------EXTRA LARGE SCREEN-------------------------*/
+
+    .hesla {
+        padding-right: 400px;
+    }
+ 
 }
 
