@@ -190,6 +190,18 @@ text-shadow:
 .hesla {
     display: none;
 }
+.kontakty {
+    text-align: center;
+    margin-top: 150px;
+}
+.kontakty h1 {
+    margin-bottom: 70px;
+}
+.kontakt p {
+    color: rgb(90, 208, 238);
+    padding: 25px;
+    letter-spacing: 2px;
+}
 
 
 
@@ -327,6 +339,15 @@ text-shadow:
     padding: 0 60px;
     letter-spacing: 2px;
     }
+    .kontakty h1 {
+        margin-bottom: 100px;
+    }
+    .kontakty_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
 
 }
 
@@ -395,6 +416,10 @@ letter-spacing: 10px;
         /* padding-right: 200px;
         padding-left: 70px; */
         font-size: 2rem;
+    }
+    .kontakty {
+        width: 80%;
+        margin: 150px auto;
     }
      
 }
