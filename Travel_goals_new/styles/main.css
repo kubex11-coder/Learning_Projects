@@ -71,6 +71,9 @@ body {
     position: relative;
     right: 50px;
 }
+
+
+
 /* IPads and Tablets*/
 @media (min-width: 480px) {
 
