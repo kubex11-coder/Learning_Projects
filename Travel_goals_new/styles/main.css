@@ -50,7 +50,7 @@ nav ul li {
 nav ul a {
     color: #69F62E;
     font-size: 2.5rem;
-    padding-right: 20px;
+    /*padding-right: 20px;*/
     letter-spacing: 2px;
     text-transform: uppercase;
    /* z-index: 10;*/
@@ -257,8 +257,8 @@ transition: 0.3s;
     font-weight: 500;
 }
 .text_part button {
-    padding: 10px 35px;
-    margin-top: 30px;
+    margin-top: 20px;
+    height: 50px;
    position: relative;
     left: 50%;
    /* -ms-transform: translate(-50%);*/
@@ -267,6 +267,7 @@ transition: 0.3s;
   border-radius: 50px;
 }
 .text_part a {
+    padding: 10px 35px;
     color: black;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -311,10 +312,11 @@ transition: 0.3s;
         margin: 30px 50px 0 50px;
     }
     .text_part button {
-        padding: 10px 45px;
+        margin-top: 30px;
     }
     .text_part a {
         font-size: 1rem;
+        padding: 10px 45px;
     }
 /* Small screens laptops*/
 @media (min-width: 768px) {
@@ -419,8 +421,11 @@ transition: 0.3s;
         margin: 50px 50px 0 50px;
     }
     .text_part button {
-        padding: 20px 50px;
+       
         margin-top: 50px;
+    }
+    .text_part a {
+        padding: 20px 50px;
     }
 
 }
@@ -477,8 +482,10 @@ transition: 0.3s;
         margin-top: 120px;
     }
     .text_part button {
-        padding: 25px 55px;
         margin-top: 100px;
+    }
+    .text_part a {
+        padding: 25px 55px;
     }
 }
 
