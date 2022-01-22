@@ -50,6 +50,10 @@ nav ul a {
    /* z-index: 10;*/
     text-decoration: none;
 }
+nav li a:hover {
+    color: black;
+    text-decoration: underline;
+}
 
 .mobile {
     position: absolute;
@@ -263,6 +267,16 @@ header h1 {
     
     nav li a {
         font-size: 20px;
+        color: black;
+    }
+    nav li:nth-child(1) a {
+        color: #69F62E;
+        text-decoration: underline;
+        cursor: none;
+    }
+    nav li a:hover {
+        color: #69F62E;
+        text-decoration: underline;
     }
     .mobile {
         display: none;
