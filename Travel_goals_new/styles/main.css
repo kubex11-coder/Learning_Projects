@@ -55,7 +55,6 @@ nav ul a {
 }
 nav li a:hover {
     color: black;
-    text-decoration: underline;
 }
 
 .mobile {
@@ -116,6 +115,12 @@ header .language.active {
     height: 30px;
     background-color: green;
     margin-right: 10px;
+}
+.language .cs:hover, .language .eng:hover {
+ width: 45px;
+ height: 35px;
+border: solid #69F62E 3px;
+transition: 0.3s;
 }
 .language .eng {
     
@@ -202,10 +207,14 @@ header .language.active {
     font-size: 14px;
     margin: 20px 20px 0 20px;
 }
+.text_part #zvyraznit {
+    color: black;
+    font-weight: 500;
+}
 
 
 
-/* IPads and Tablets*/
+/* IPads and Tablets*/                                                          /* IPads and Tablets*/                                        
 @media (min-width: 480px) {
     header {
         margin-top: 30px;
@@ -303,13 +312,15 @@ header .language.active {
         color: black;
     }
     nav li:nth-child(1) a {
-        color: #69F62E;
-        text-decoration: underline;
+        color: grey;
         cursor: none;
     }
+    nav li:nth-child(1) a:hover {
+        color: grey;
+    }
+
     nav li a:hover {
         color: #69F62E;
-        text-decoration: underline;
     }
     .mobile {
         display: none;
@@ -364,7 +375,7 @@ header .language.active {
     .text_part h2 {
        
         font-size: 30px;
-        margin-top: 100px;
+        margin-top: 70px;
     }
     .text_part p {
         
