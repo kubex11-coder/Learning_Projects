@@ -15,6 +15,9 @@ nav {
     justify-content: space-between;
     align-items: center ;
 }
+.logo {
+    display: none;
+}
 
 
 .right_side_nav {
@@ -97,13 +100,35 @@ header h1 {
     left: 50px;
     z-index: 1;
 }
+header .language {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    z-index: 30;
+}
+header .language.active {
+    display:none
+}
+.language .cs {
+    
+    width: 40px;
+    height: 30px;
+    background-color: green;
+    margin-right: 10px;
+}
+.language .eng {
+    
+    width: 40px;
+    height: 30px;
+    background-color: aqua;
+}
 
 .image_slider {
     background-color: greenyellow;
     height: 350px;
     overflow: hidden;
     margin: 0;
-    border-radius: 50px;
 }
 
 .image_slider figure {
@@ -188,6 +213,14 @@ header h1 {
     header h1 {
         font-size: 2rem;
         top: 160px;
+    }
+    .logo {
+        display: block;
+    }
+    header .language {
+        right: 50px;
+        top: 130px;
+        left: unset;
     }
     .image_slider {
         height: 500px;   
@@ -294,6 +327,7 @@ header h1 {
     .image_slider {
         margin: auto 0;
         margin-left: 25px;
+        border-radius: 50px;
     }
     .text_part {
         height: 470px;
