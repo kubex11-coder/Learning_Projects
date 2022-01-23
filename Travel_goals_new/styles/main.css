@@ -268,7 +268,7 @@ transition: 0.3s;
 }
 
 .video_overall {
-margin-top: -50px;
+margin-top: -150px;
 position: absolute;
 left: 0;
 width: 100%;
@@ -290,7 +290,7 @@ background-size: cover;
     font-size: 1.5rem;
     color: #69F62E;
     background-color: whitesmoke;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
 }
 .mobile_video iframe {
 margin: 20px auto;
@@ -370,7 +370,7 @@ margin: 20px auto;
         margin: 30px 50px 30px 50px;
     }
     .video_overall {
-        height: 500px;
+        height: 600px;
         }
     .mobile_video {
      display: none;
@@ -475,7 +475,7 @@ margin: 20px auto;
         padding: 20px 50px;
     }
     .video_overall {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
 }
@@ -550,7 +550,7 @@ margin: 20px auto;
         padding: 25px 55px;
     }
     .video_overall {
-        height: 600px;
+        height: 700px;
     }
     .videa_web {
         margin-top: 100px;
