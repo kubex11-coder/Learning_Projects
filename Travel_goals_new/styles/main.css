@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -275,6 +276,37 @@ transition: 0.3s;
   text-transform: uppercase;
 }
 
+.video_overall {
+margin-top: -50px;
+position: absolute;
+left: 0;
+width: 100%;
+height: 300px;
+background-image: url(../images/background/video_background.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+/*background-color: #69F62E;*/
+}
+.mobile_video {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mobile_video h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #69F62E;
+    background-color: whitesmoke;
+    letter-spacing: 8px;
+}
+.mobile_video iframe {
+margin: 20px auto;
+}
+.web_video {
+    display: none;
+}
 
 
 
@@ -316,6 +348,9 @@ transition: 0.3s;
         font-size: 1rem;
         padding: 10px 45px;
     }
+    .video_overall {
+        margin-top: 0px;
+    }
 /* Small screens laptops*/
 @media (min-width: 768px) {
     
@@ -342,6 +377,31 @@ transition: 0.3s;
         
         font-size: 18px;
         margin: 30px 50px 30px 50px;
+    }
+    .video_overall {
+        height: 500px;
+        }
+    .mobile_video {
+     display: none;
+    }
+    .web_video {
+            display: block;
+            text-align: center;
+    }
+    .web_video iframe {
+        border-radius: 25px;
+    }
+    .web_video h1 {
+        color: #69F62E;
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+        background-color: whitesmoke;
+    }
+    .web_video #second {
+        display: none;
     }
 }
 /* Large screens desktops*/
@@ -423,6 +483,9 @@ transition: 0.3s;
         margin-top: 50px;
         padding: 20px 50px;
     }
+    .video_overall {
+        margin-top: 50px;
+    }
 
 }
 /* Extra large desktop screens*/
@@ -445,6 +508,18 @@ transition: 0.3s;
         font-size: 18px;
         margin: 50px 70px 50px 70px;
     }
+    .web_video {
+        display: block;
+        text-align: center;
+}
+.videa_web {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.web_video #second {
+    display: inline;
+}
 
 }
 /*XXXL screens and TVs*/
@@ -482,6 +557,12 @@ transition: 0.3s;
     .text_part a {
         margin-top: 100px;
         padding: 25px 55px;
+    }
+    .video_overall {
+        height: 600px;
+    }
+    .videa_web {
+        margin-top: 100px;
     }
 }
 
