@@ -149,27 +149,18 @@ transition: 0.3s;
   }
   .facebook {
     background: #3B5998;
-    color: blue;
   }
   
   .instagram {
-    background: #55ACEE;
-    color: yellow;
+    background: #eb9e34;
   }
   
   .Youtube {
-    background: #dd4b39;
-    color: red;
+    background: red;
   }
   
   .linkedin {
     background: #007bb5;
-    color: blue;
-  }
-  
-  .youtube {
-    background: #bb0000;
-    color: white;
   }
   
 
