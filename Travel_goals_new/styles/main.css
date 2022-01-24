@@ -301,9 +301,25 @@ margin: 20px auto;
 }
 
 .dalsi_sekce_overall {
-    margin-top: 250px;
-    background-color: #eb9e34;
-    height: 60vh;
+    margin-top: 200px;
+
+   background: linear-gradient(120deg, rgba(173,168,168,1) 0%, rgba(105,246,46,1) 88%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+}
+#dalsi_sekce {
+    position: relative;
+    top: 20px;
+    background-color: white;
+    color: #69F62E;
+width: 100%;
+text-align: center;
+font-size: 1.5rem;
+letter-spacing: 4px;
+text-transform: uppercase;
+
 }
 
 .img_slider p, h1, a {
@@ -311,6 +327,7 @@ margin: 20px auto;
 } 
 .img_slider {
     position: relative;
+    top: 50px;
     margin: 0 auto;
     padding: 0;
     /*height: 83%;
@@ -358,20 +375,19 @@ margin: 20px auto;
 .img_slider .slide p {
     color: white;
     background: rgba(0,0,0,0.1);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 100%;
-    padding: 10px;
+    padding: 7px;
     border-radius: 15px;
 }
 .img_slider .slide a {
     font-size: 0.7rem;
-    letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
     top: 5px;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 15px;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 50px;
     /*margin-left: 25px;*/
     text-decoration: none;
     background: #69F62E;
@@ -388,7 +404,7 @@ margin: 20px auto;
     background: rgba(255,255,255,0.5);
     width: 17px;
     height: 17px;
-    margin: 10px;
+    margin: 15px;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -440,6 +456,7 @@ margin: 20px auto;
     }
     .dalsi_sekce_overall {
         margin-top: 400px;
+        height: 550px ;
     }
     .img_slider {
         width: 450px;
@@ -463,7 +480,7 @@ margin: 20px auto;
     .img_slider .navigation .btn {
         width: 17px;
         height: 17px;
-        margin: 10px;
+        margin: 13px;
     }
 }
 /* Small screens laptops*/
@@ -520,10 +537,17 @@ margin: 20px auto;
     }
     .dalsi_sekce_overall {
         margin-top: 700px;
+        height: 650px;
+    }
+    #dalsi_sekce {
+        font-size: 2rem;
+        letter-spacing: 15px;
+        top: 45px;
     }
     .img_slider {
         width: 700px;
         height: 450px;
+        top: 100px;
     }
     .img_slider .slide h1 {
         font-size: 2rem;
@@ -629,7 +653,7 @@ margin: 20px auto;
         margin-top: 80px;
     }
     .dalsi_sekce_overall {
-        margin-top: 900px;
+        margin-top: 800px;
         height: 100vh;
     }
     .img_slider {
@@ -646,7 +670,7 @@ margin: 20px auto;
     .img_slider .slide a {
         font-size: 1.4rem;
         top: 25px;
-        padding: 20px 40px;
+        padding: 20px 50px;
     }
     .img_slider .navigation {
         bottom: 10px;
@@ -690,9 +714,7 @@ margin: 20px auto;
 .web_video #second {
     display: inline;
 }
-.img_slider {
-    height: 83%;
-}
+
 .dalsi_sekce_overall {
     margin-top: 800px;
 }
@@ -752,23 +774,25 @@ margin: 20px auto;
     }
     .dalsi_sekce_overall {
         margin-top: 900px;
+     height: 1100px;
+    /*  background-color: #eb9e34;*/
     }
     .img_slider {
-        width: 1300px;
+        width: 1250px;
         height: 850px;
 }
 .img_slider .slide h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 .img_slider .slide p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 60%;
     margin-top: 35px;
 }
 .img_slider .slide a {
     font-size: 1.2rem;
     top: 35px;
-    padding: 15px 30px;
+    padding: 20px 50px;
 }
 .img_slider .navigation {
     bottom: 10px;
