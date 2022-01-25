@@ -279,10 +279,7 @@ position: absolute;
 left: 0;
 width: 100%;
 height: 300px;
-background-image: url(../images/background/video_background.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+
 /*background-color: #69F62E;*/
 }
 .mobile_video {
@@ -294,7 +291,8 @@ background-size: cover;
 .mobile_video h1 {
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #69F62E;
+   color: white;
+   text-shadow: #69F62E 2px 2px;
     letter-spacing: 4px;
 }
 .mobile_video iframe {
@@ -316,6 +314,7 @@ margin: 20px auto;
     top: 20px;
     background-color: black;
     color: white;
+    text-shadow: #69F62E 2px 2px;
 width: 100%;
 text-align: center;
 font-size: 1.5rem;
@@ -332,10 +331,10 @@ text-transform: uppercase;
     top: 50px;
     margin: 0 auto;
     padding: 0;
-    /*height: 83%;
-    width: 100%;*/
-    width: 250px;
-    height: 250px;
+    /*height: 83%;*/
+    width: 100%;
+   /* width: 250px;*/
+    height: 280px;
     /*margin: 10px;*/
 
 }
@@ -378,7 +377,7 @@ text-transform: uppercase;
     color: white;
     background: rgba(0,0,0,0.1);
     font-size: 0.7rem;
-    width: 100%;
+    width: 80%;
     padding: 7px;
     border-radius: 15px;
 }
@@ -421,7 +420,8 @@ text-transform: uppercase;
 #form_h1 {
    position: relative;
    top: 20px;
-    color: #69F62E;
+    color: white;
+    text-shadow: #69F62E 2px 2px;
     margin-top: 800px;
 width: 100%;
 text-align: center;
@@ -489,6 +489,14 @@ text-transform: uppercase;
     }
     .video_overall {
         margin-top: 70px;
+        background-image: url(../images/background/video_background.png);
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    }
+    .mobile_video h1 {
+        color: whitesmoke;
     }
     .dalsi_sekce_overall {
        margin-top: -20px;
@@ -567,7 +575,8 @@ text-transform: uppercase;
         border-radius: 25px;
     }
     .web_video h1 {
-        color: #69F62E;
+        color: whitesmoke;
+        text-shadow: #69F62E 2px 2px;
         font-size: 2rem;
         margin-top: 50px;
         margin-bottom: 80px;
@@ -715,7 +724,7 @@ text-transform: uppercase;
         height: 100vh;
     }
     .img_slider {
-        width: 1000px;
+        width: 100px;
         height: 650px;
     }
     .img_slider .slide h1 {
@@ -843,8 +852,8 @@ text-transform: uppercase;
     /*  background-color: #eb9e34;*/
     }
     .img_slider {
-        width: 1250px;
-        height: 850px;
+        width: 1150px;
+        height: 750px;
 }
 .img_slider .slide h1 {
     font-size: 2.2rem;
