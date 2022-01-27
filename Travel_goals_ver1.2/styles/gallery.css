@@ -1,4 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/maiandra-gd');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,6 +9,9 @@
 body {
     width: 100%;
     margin: 0;
+    background: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 nav {
     height: 80px;
@@ -35,7 +39,7 @@ nav {
     padding: 0;
     margin-top: 650px;
     z-index: 20;
-    background: white;
+    background: black;
 }
 nav ul li {
     display: block;
@@ -161,6 +165,12 @@ transition: 0.3s;
   .linkedin {
     background: #007bb5;
   }
+  #rychly_vyber {
+      display: none;
+  }
+  .gallery_selector {
+      display: none;
+  }
   
   
   /* IPads and Tablets*/                                                          /* IPads and Tablets*/                                        
@@ -196,8 +206,6 @@ transition: 0.3s;
     }
     nav li a {
         font-size: 26px;
-        /*color: #69F62E;*/
-        color: black;
         text-decoration: none;
         text-transform: uppercase;
     }
@@ -207,7 +215,7 @@ transition: 0.3s;
     
     nav li a {
         font-size: 20px;
-        color: black;
+        color: white;
     }
     nav li:nth-child(1) a {
         color: grey;
@@ -222,6 +230,47 @@ transition: 0.3s;
     }
     .mobile {
         display: none;
+    }
+    #rychly_vyber {
+        display: block;
+        color: #69F62E;
+        margin-top: 100px;
+        width: 100%;
+        text-align: center;
+    }
+    .gallery_selector {
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-start;
+    }
+    .gallery_selector .year {
+        padding: 20px 50px;
+        border-radius: 25px;
+    }
+    .gallery_selector h1 {
+        color: #69F62E;
+    }
+    .gallery_selector a {
+        position: relative;
+        display: block;
+        padding-bottom: 20px;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .gallery_selector a:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 10px;
+        width: 0%;
+        height: 5px;
+        background-color: #69F62E;
+    }
+    .gallery_selector a:hover:after {
+        width: 100%;
+        transition: 1s;
     }
 }
 
