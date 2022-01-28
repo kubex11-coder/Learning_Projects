@@ -131,10 +131,7 @@ transition: 0.3s;
     background-position: center;
 }
 .social_bars {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    z-index: 30;
+    display: none
 }
 .social_bars.active {
     display: none;
@@ -230,6 +227,13 @@ transition: 0.3s;
     }
     .mobile {
         display: none;
+    }
+    .social_bars {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 0;
+        z-index: 30;
     }
     #rychly_vyber {
         display: block;

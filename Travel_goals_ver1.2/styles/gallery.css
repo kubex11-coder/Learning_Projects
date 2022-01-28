@@ -131,10 +131,7 @@ transition: 0.3s;
     background-position: center;
 }
 .social_bars {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    z-index: 30;
+    display: none
 }
 .social_bars.active {
     display: none;
@@ -171,6 +168,257 @@ transition: 0.3s;
   .gallery_selector {
       display: none;
   }
+  .containers_overall {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .secondSlides {
+      display: none;
+  }
+  .thirdSlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    height: 80px;
+    width: 16.66%;
+  }
+  .secondColumn {
+    float: left;
+    height: 80px;
+    width: 10%; 
+  }
+  .thirdColumn {
+      float: left;
+      height: 80px;
+      width: 10%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  .secondDemo {
+      opacity: 0.6;
+  }
+  .thirdDemo {
+      opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .secondDemo:hover {
+      opacity: 1;
+  }
+  .thirdDemo:hover {
+      opacity: 1;
+  }
+  /*eight_gallery*/
+.eightDemo {
+    opacity: 0.6;
+}
+
+.eightDemo:hover {
+    opacity: 1;
+}
+.eightSlides {
+    display: none;
+}
+.eightColumn {
+  float: left;
+  height: 80px;
+  width: 10%; 
+}
+/*ninght_gallery*/
+.ninghtDemo {
+    opacity: 0.6;
+}
+
+.ninghtDemo:hover {
+    opacity: 1;
+}
+.ninghtSlides {
+    display: none;
+}
+.ninghtColumn {
+  float: left;
+  hninght: 80px;
+  width: 10%; 
+}
+/*tenth_gallery*/
+.tenthDemo {
+    opacity: 0.6;
+}
+
+.tenthDemo:hover {
+    opacity: 1;
+}
+.tenthSlides {
+    display: none;
+}
+.tenthColumn {
+  float: left;
+  htenth: 80px;
+  width: 10%; 
+}
+/*eleventh_gallery*/
+.eleventhDemo {
+    opacity: 0.6;
+}
+
+.eleventhDemo:hover {
+    opacity: 1;
+}
+.eleventhSlides {
+    display: none;
+}
+.eleventhColumn {
+  float: left;
+  heleventh: 80px;
+  width: 10%; 
+}
+/*twelveth_gallery*/
+.twelvethDemo {
+    opacity: 0.6;
+}
+
+.twelvethDemo:hover {
+    opacity: 1;
+}
+.twelvethSlides {
+    display: none;
+}
+.twelvethColumn {
+  float: left;
+  htwelveth: 80px;
+  width: 10%; 
+}
+/*thrirteenth_gallery*/
+.thrirteenthDemo {
+    opacity: 0.6;
+}
+
+.thrirteenthDemo:hover {
+    opacity: 1;
+}
+.thrirteenthSlides {
+    display: none;
+}
+.thrirteenthColumn {
+  float: left;
+  hthrirteenth: 80px;
+  width: 10%; 
+}
+/*fourteenth_gallery*/
+.fourteenthDemo {
+    opacity: 0.6;
+}
+
+.fourteenthDemo:hover {
+    opacity: 1;
+}
+.fourteenthSlides {
+    display: none;
+}
+.fourteenthColumn {
+  float: left;
+  hfourteenth: 80px;
+  width: 10%; 
+}
+/*fifteenth_gallery*/
+.fifteenthDemo {
+    opacity: 0.6;
+}
+
+.fifteenthDemo:hover {
+    opacity: 1;
+}
+.fifteenthSlides {
+    display: none;
+}
+.fifteenthColumn {
+  float: left;
+  hfifteenth: 80px;
+  width: 10%; 
+}
+
+  
   
   
   /* IPads and Tablets*/                                                          /* IPads and Tablets*/                                        
@@ -187,9 +435,86 @@ transition: 0.3s;
         top: 130px;
         left: unset;
     }
+    .container {
+        width: 100%;
+    }
 }
+
+
+
+/*fourth_gallery*/
+.fourthDemo {
+    opacity: 0.6;
+}
+
+.fourthDemo:hover {
+    opacity: 1;
+}
+.fourthSlides {
+    display: none;
+}
+.fourthColumn {
+  float: left;
+  height: 80px;
+  width: 10%; 
+}
+
+
+
+/*fifth_gallery*/
+.fifthDemo {
+    opacity: 0.6;
+}
+
+.fifthDemo:hover {
+    opacity: 1;
+}
+.fifthSlides {
+    display: none;
+}
+.fifthColumn {
+  float: left;
+  height: 80px;
+  width: 10%; 
+}
+/*sixth_gallery*/
+.sixthDemo {
+    opacity: 0.6;
+}
+
+.sixthDemo:hover {
+    opacity: 1;
+}
+.sixthSlides {
+    display: none;
+}
+.sixthColumn {
+  float: left;
+  height: 80px;
+  width: 10%; 
+}
+/*seventh_gallery*/
+.seventhDemo {
+    opacity: 0.6;
+}
+
+.seventhDemo:hover {
+    opacity: 1;
+}
+.seventhSlides {
+    display: none;
+}
+.seventhColumn {
+  float: left;
+  height: 80px;
+  width: 10%; 
+}
+
 /* Small screens laptops*/
 @media (min-width: 768px) {
+}
+.container {
+    width: 100%;
 }
 
 
@@ -231,6 +556,13 @@ transition: 0.3s;
     .mobile {
         display: none;
     }
+    .social_bars {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 0;
+        z-index: 30;
+    }
     #rychly_vyber {
         display: block;
         color: #69F62E;
@@ -244,6 +576,7 @@ transition: 0.3s;
         display: flex;
         justify-content: space-around;
         align-items:flex-start;
+        margin-bottom: 150px;
     }
     .gallery_selector .year {
         padding: 20px 50px;
@@ -272,6 +605,9 @@ transition: 0.3s;
         width: 100%;
         transition: 1s;
     }
+    .container {
+        width: 49%;
+    }
 }
 
 /* Extra large desktop screens*/
@@ -283,9 +619,10 @@ transition: 0.3s;
     nav li a {
         font-size: 22px;
     }
-}
-
-/*XXXL screens and TVs*/
+    
+ }
+        
+        /*XXXL screens and TVs*/
 @media (min-width: 1400px) {
    
     body {
