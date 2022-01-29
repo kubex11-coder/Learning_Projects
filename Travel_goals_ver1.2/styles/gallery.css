@@ -546,11 +546,11 @@ transition: 0.3s;
         font-size: 20px;
         color: white;
     }
-    nav li:nth-child(1) a {
+    nav li:nth-child(3) a {
         color: grey;
         cursor: none;
     }
-    nav li:nth-child(1) a:hover {
+    nav li:nth-child(3) a:hover {
         color: grey;
     }
 
