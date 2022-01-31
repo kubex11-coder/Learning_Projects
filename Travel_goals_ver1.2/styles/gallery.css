@@ -169,6 +169,7 @@ transition: 0.3s;
       display: none;
   }
   .containers_overall {
+      margin-top: 100px;
       display: flex;
       justify-content: space-around;
       align-items: center;
