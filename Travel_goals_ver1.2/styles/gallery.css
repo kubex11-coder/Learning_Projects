@@ -118,7 +118,7 @@ header .language.active {
 .language .cs:hover, .language .eng:hover {
  width: 45px;
  height: 35x;
- border: #69F62E solid 5px;
+ border: white solid 2px;
 transition: 0.3s;
 }
 .language .eng {
