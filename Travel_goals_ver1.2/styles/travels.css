@@ -21,6 +21,7 @@ nav {
 }
 .logo {
     display: none;
+    z-index: 10;
 }
 .logo.active {
     display: none;
@@ -29,6 +30,7 @@ nav {
 
 .right_side_nav {
     display: none;
+    z-index: 10;
 }
 .right_side_nav.active{
     width: 100%;
@@ -39,7 +41,7 @@ nav {
     padding: 0;
     margin-top: 650px;
     z-index: 20;
-    background: white;
+    background: black;
 }
 nav ul li {
     display: block;
@@ -78,8 +80,9 @@ nav li a:hover {
 .mobile .bar {
     width: 100%;
     height: 3px;
-    background-color: #69F62E;
+    background-color: white;
     border-radius: 10px;
+    z-index: 10;
 }
 header {
     margin: 0;
@@ -118,7 +121,7 @@ header .language.active {
 .language .cs:hover, .language .eng:hover {
  width: 45px;
  height: 35x;
- border: #69F62E solid 5px;
+ border: white solid 2px;
 transition: 0.3s;
 }
 .language .eng {
@@ -168,6 +171,152 @@ transition: 0.3s;
   .gallery_selector {
       display: none;
   }
+  .herobanner1, .herobanner2, .herobanner3, .herobanner4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+.herobanner1 {
+    animation: slide1 12s infinite;
+}
+.herobanner2 {
+    animation: slide2 12s infinite;
+}
+.herobanner3 {
+    animation: slide3 12s infinite;
+}
+.herobanner4 {
+    animation: slide4 12s infinite;
+}
+@keyframes slide1 {
+    0% {
+        visibility: visible;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes slide2 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes slide3 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes slide4 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+header img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    z-index: 1;
+    height: 100%;
+    animation: zoom-out infinite 3s linear;
+}
+@keyframes zoom-out {
+    100%{
+        width: 100%;
+    }
+}
+.text_box {
+    position: absolute;
+    top: 200px;
+    color: whitesmoke;
+    width: 200px;
+    z-index: 10;
+    margin-left: 10px;
+    animation: textup 12s linear;
+    transform: translateY(-20px);
+}
+@keyframes textup {
+10% {
+transform: translateY(0px);
+}
+100% {
+    transform: translateY(0px); 
+}
+
+}
+.text_box h1 {
+font-size: 1.5rem;
+text-transform: uppercase;
+}
+.text_box p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.text_box a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    background-color: #69F62E;
+    border-radius: 25px;
+}
+.text_box span {
+    background-color: #69F62E;
+    height: 1px;
+    width: 70px;
+    position: absolute;
+    left: 0;
+    z-index: 20;
+}
   
   
   /* IPads and Tablets*/                                                          /* IPads and Tablets*/                                        
@@ -184,9 +333,59 @@ transition: 0.3s;
         top: 130px;
         left: unset;
     }
+    .herobanner1, .herobanner2, .herobanner3, .herobanner4 {
+        height: 600px;
+    }
+    .text_box {
+        top: 250px;
+        width: 300px;
+        z-index: 10;
+        margin-left: 40px;
+    }
+    .text_box h1 {
+    font-size: 2rem;
+    }
+    .text_box p {
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .text_box a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+    .text_box span {
+        width: 100px;
+    }
 }
 /* Small screens laptops*/
 @media (min-width: 768px) {
+    .herobanner1, .herobanner2, .herobanner3, .herobanner4 {
+        height: 700px;
+    }
+    .text_box {
+        top: 250px;
+        width: 400px;
+        z-index: 10;
+        margin-left: 50px;
+        transform: translateY(-100px);
+    }
+    .text_box h1 {
+    font-size: 2.5rem;
+    }
+    .text_box p {
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+    .text_box a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+    .text_box span {
+        width: 133px;
+    }
+
+
 }
 
 
@@ -214,11 +413,11 @@ transition: 0.3s;
         font-size: 20px;
         color: white;
     }
-    nav li:nth-child(1) a {
+    nav li:nth-child(2) a {
         color: grey;
         cursor: none;
     }
-    nav li:nth-child(1) a:hover {
+    nav li:nth-child(2) a:hover {
         color: grey;
     }
 
@@ -276,6 +475,30 @@ transition: 0.3s;
         width: 100%;
         transition: 1s;
     }
+    .herobanner1, .herobanner2, .herobanner3, .herobanner4 {
+        height: 1000px;
+    }
+    .text_box {
+        top: 350px;
+        width: 500px;
+        z-index: 10;
+        margin-left: 150px;
+    }
+    .text_box h1 {
+    font-size: 2.5rem;
+    }
+    .text_box p {
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+    .text_box a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+    .text_box span {
+        width: 166px;
+        height: 2px;
+    }
 }
 
 /* Extra large desktop screens*/
@@ -287,13 +510,37 @@ transition: 0.3s;
     nav li a {
         font-size: 22px;
     }
+    .herobanner1, .herobanner2, .herobanner3, .herobanner4 {
+        /*height: 1150px;*/
+        height: 100vh;
+    }
+
 }
 
 /*XXXL screens and TVs*/
 @media (min-width: 1400px) {
    
-    body {
-        width: 90%;
-        margin: 0 auto;
+
+    .text_box {
+        top: 350px;
+        width: 600px;
+        z-index: 10;
+        margin-left: 250px;
     }
+
+    .text_box h1 {
+        font-size: 3rem;
+        letter-spacing: 5px;
+        }
+        .text_box p {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+        .text_box a {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+        }
+        .text_box span {
+            width: 200px;
+        }
 }
