@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel-Goals</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contacts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -44,8 +44,41 @@
     <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
 </div>
 </header>
-<!-- https://www.youtube.com/watch?v=sGQSz22U8VM -->
+<h1 id="form_h1">Kontaktujte mě</h1>
+<div class="form_overall">
+    <div class="image_form">
 
+    </div>
+    <div class="form_field">
+        <form onsubmit="sendEmail(); reset(); return false;">
+        <h2>Kontaktní formulář</h2>
+        <input type="text" id="name" name="name" class="field" placeholder="Vaše jméno">
+        <input type="email" id="email" name="email" class="field" placeholder="Váš E-mail">
+        <input type="text"id="phone" name="phone" class="field" placeholder="Váš mobil">
+        <textarea class="field area" id="textarea" name="text" placeholder="Zpráva"></textarea>
+        <button type="submit">
+            Odeslat
+        </button>
+        </form>
+    </div>
+</div>
+<!-- https://www.youtube.com/watch?v=sGQSz22U8VM -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="scripts/main.js"></script>
+<script>
+function sendEmail() {
+    Email.send ({
+Host: "wes1-smtp.wedos.net",
+Username: "sendmemail@travel-goals.cz",
+Password:"Microsoft1heath!",
+To:"jakubdvorak91@seznam.cz",
+From: document.getElementById("email").value,
+Subject: "new contact form",
+Body: "and this is the body:"
+    } ).then(message =>allert(message)
+    );
+}
+
+</script>
 </body>
 </html>
