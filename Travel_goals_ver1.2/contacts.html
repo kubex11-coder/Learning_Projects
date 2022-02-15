@@ -50,35 +50,45 @@
 
     </div>
     <div class="form_field">
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <!-- https://formsubmit.co/ -->
+        <form action="https://formsubmit.co/jakubdvorak91@seznam.cz" method="POST">
         <h2>Kontaktní formulář</h2>
         <input type="text" id="name" name="name" class="field" placeholder="Vaše jméno">
         <input type="email" id="email" name="email" class="field" placeholder="Váš E-mail">
         <input type="text"id="phone" name="phone" class="field" placeholder="Váš mobil">
-        <textarea class="field area" id="textarea" name="text" placeholder="Zpráva"></textarea>
-        <button type="submit">
+        <textarea class="field area" id="message" name="text" placeholder="Zpráva"></textarea>
+        <button type="submit" id="submit">
             Odeslat
         </button>
         </form>
     </div>
 </div>
-<!-- https://www.youtube.com/watch?v=sGQSz22U8VM -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!-- https://www.youtube.com/watch?v=sGQSz22U8VM
+https://codeconia.com/2021/09/22/html-form-to-email-using-javascript-and-smtp-server/
+ -->
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 <script src="scripts/main.js"></script>
-<script>
-function sendEmail() {
-    Email.send ({
-Host: "wes1-smtp.wedos.net",
-Username: "sendmemail@travel-goals.cz",
-Password:"Microsoft1heath!",
-To:"jakubdvorak91@seznam.cz",
-From: document.getElementById("email").value,
-Subject: "new contact form",
-Body: "and this is the body:"
-    } ).then(message =>allert(message)
+<!-- <script> -->
+<!-- function sendEmail() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+    let finalmessage = `Name : ${name} <br>  Email : ${email} <br> phone : ${phone} <br> Message : ${message} <br>`;
+    
+    
+    Email.send({
+        Host : "wes1-smtp.wedos.net",
+        Username : "sendmemail@travel-goals.cz",
+        Password : "Microsoft1heath!",
+        To : 'jakubdvorak91@seznam.cz',
+        From : email,
+        Subject : "Mail from website",
+        Body : finalmessage
+    }).then(
+      message => alert(message)
     );
 }
-
-</script>
+</script> -->
 </body>
 </html>
