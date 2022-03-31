@@ -78,31 +78,31 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: "Kdo má největší svaly?",
+        question: "Dá si se mnou dnes Martin pívo?",
         answers: [
-            {text: "Jakub silný", correct: true},
-            {text: "Daniel slabý", correct: false},
-            {text: "Táta Dvořák starý", correct: false},
-            {text: "Tonda mimi", correct: false},
+            {text: "nedá", correct: false},
+            {text: "dá", correct: true},
+           /* {text: "Táta Dvořák starý", correct: false},
+            {text: "Tonda mimi", correct: false},*/
         ]
     },
     {
-        question: "Kdo má největší IQ?",
+        question: "Naučí se Sabča někdy anglicky?",
         answers: [
-            {text: "Jakub chytrý", correct: false},
-            {text: "Daniel moudrý", correct: true},
-            {text: "Táta Dvořák starý a nenoudrý", correct: false},
-            {text: "Tonda mini mimi", correct: false},
+            {text: "Nenaučí", correct: false},
+            {text: "To ví jen bůh", correct: true},
+            {text: "Naučí", correct: false},
+           /* {text: "Je někde s kurvama", correct: false},*/
         ]
     },
     {
     
-        question: "Kdo je nejvíc pohledný?",
+        question: "Kdo má na Podlázkách největší bicák?",
         answers: [
-            {text: "Jakub pěkný", correct: true},
-            {text: "Daniel ucházející", correct: false},
-            {text: "Táta Dvořák starý, nepěkný a nemoudrý", correct: false},
-            {text: "Tonda, Martiny mini mimi ", correct: false},
+            {text: "Rosie", correct: false},
+            {text: "Turbo", correct: false},
+            {text: "Jakub Dvořák", correct: true},
+            {text: "Martin Šnýdr Kovařík", correct: false},
         ]
     }
     
