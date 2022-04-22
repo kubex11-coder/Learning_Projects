@@ -9,6 +9,43 @@ body::before {
     height: 60px;
 } 
 
+.social_bars {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 30;
+}
+.social_bars.active {
+    display: none;
+}
+.social_bars a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  .social_bars a:hover {
+    background-color: #000;
+  }
+  .facebook {
+    background: #3B5998;
+    
+  }
+  
+  .instagram {
+    background: #eb9e34;
+  }
+  
+  .Youtube {
+    background: red;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+  }
+
 /* #contact-card {
    max-width: 450px;
 } */
