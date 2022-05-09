@@ -1,0 +1,241 @@
+/* Utils */ 
+
+.text-underline {
+    text-decoration: underline;
+  }
+  
+  @media (min-width: 1300px) {
+      .container {
+          max-width: 1280px;
+      }
+  }
+  
+  
+  .bg-dark-violet {
+      background-color: #3F0147;
+  }
+  
+  .bg-violet {
+      background-color: #5C0966;
+  }
+  
+  .text-yellow {
+      color: #FFC107;
+  }
+  
+  .text-30 {
+      font-size: 30px;
+  }
+  
+  .bg-img-family {
+      background-image: url(img/family.png);
+      background-position: right center;
+      background-size: 25% auto;
+      background-repeat: no-repeat;
+  }
+  
+  .text-40 {
+      font-size: 1.5rem !important;
+  }
+  
+  @media (min-width: 768px) {
+  
+      .text-40 {
+          font-size: 2rem !important;
+      }
+  }
+  
+  @media (min-width: 992px) {
+  
+      .text-40 {
+          font-size: 2.4rem !important;
+      }
+  }
+  
+  
+  .btn-more {
+      font-size: 1.4rem !important;
+      transition: .4s all;
+  }
+  
+  .btn-more.btn-lightgreen:hover {
+      background-color: #00af00;
+  }
+  
+  @media (min-width: 768px) {
+  
+      .btn-more {
+          font-size: 2.25rem !important;
+      }
+  }
+  
+  
+  .text-roboto {
+  
+      font-family: 'Roboto', sans-serif;
+      
+  }
+  
+  .text-28 {
+      font-size: 1.125rem;
+  }
+  
+  @media (min-width: 768px) {
+  
+      .text-28 {
+          font-size: 1.75rem;
+      }
+  }
+  
+  
+  .step-text {
+      width: calc(100% - 75px);
+      position: absolute;
+      top: 50%;
+      left: 90px;
+      transform: translateY(-50%) !important;
+  }
+  
+  @media (min-width: 992px) {
+      .step-text {
+          font-size: 1.25rem;
+      }
+  }
+  
+  .ml-5proc {
+      margin-left: 5%!important;
+  }
+  
+  .ml-min10proc {
+      margin-left: -10%;
+  }
+  
+  .text-nextobutton {
+      line-height: 72px;
+  font-size: 15px;
+  }
+  
+  .btn-lightgreen {
+      background-color: #29C629;
+  }
+  
+  .text-violet {
+      color: #BF3DCF;
+  }
+  
+  .text-roboto-black {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+  }
+  
+  @media (max-width: 768px) {
+      
+  .ml-5proc {
+      margin-left: 0%!important;
+  }
+  
+  .ml-min10proc {
+      margin-left: 0%;
+  }
+  
+  }
+  .img-family {
+  bottom: 0;
+  left: 0;
+  max-height: 25vh;
+  object-fit: contain;
+  }
+  
+  @media (min-width: 768px) {
+      .img-family {
+          max-height: 60vh;
+      }
+  
+  }
+  
+  
+  
+  
+  .bg-light-blue {
+      background-color: #cde1e8; 
+      padding: 40px 0;
+  }
+  
+  .bg-light-blue h2 {
+      color: #2d3545;
+      margin-bottom: 40px;
+  }
+  
+  .review-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+  }
+  
+  .review-item-header span.review-item-header-title {
+      color: #47505e;
+      font-size: 16px;
+      font-weight: bold;
+  }
+  
+  .review-item-header span.review-item-header-subtitle {
+      color: #672072 !important;
+      font-size: 14px;
+  }
+  
+  .review-item-body {
+      position: relative;
+      background: white;
+      border: 1px solid #a6bac0;
+      border-radius: 10px; 
+  }
+  
+  .review-item-body:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url(img/review-arrow-up.png);
+      width: 9px;
+      height: 14px;
+      top:  0;
+      transform: translateY(-100%);
+      left: 25px;
+  
+  }
+  
+  .review-item-body p {
+      color: #353d4b;
+      padding: 20px 20px;
+      margin-bottom: 0;
+  }
+  
+  .review-item-body-request {
+      padding: 12px 20px;
+      background-color: #d8eaf0;
+      color: #289c2c;
+      font-weight: bold;
+  }
+  
+  .review-item-body-footer {
+      background: linear-gradient(-180deg, rgba(37,146,42,1) 0%, rgba(26,114,57,1) 100%);
+      padding: 12px 20px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      font-weight: bold;
+  }
+  
+  .review-item-footer a {
+      display: block;
+      color: #159316;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: underline;
+  
+  }
+  
+  .review-item-footer {
+      padding: 5px 10px;
+  }
+  
+  

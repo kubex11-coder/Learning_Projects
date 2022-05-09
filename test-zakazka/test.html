@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5NMBMHR');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LFR6GT7VY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7LFR6GT7VY');
+  gtag('config', 'AW-10848142951');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlatitMéně.cz | Kalkulačka energií</title>
+<link rel="shortcut icon" href="https://www.platitmene.cz/images/favicon.png" />
+<link href="css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '740317223599519');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=740317223599519&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+
+
+<body class="mb-5 pb-5">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NMBMHR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+        <div class="container-fluid p-0 px-4">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <div style="float:left;">
+                        <a href="/" title="Platit méně za ..."><img src="/img/logo.png" alt="" class="img-fluid py-3 mb-3 logo" alt="PlatitMéně.cz logo	"></a>
+                    </div>
+                    <div style="float:right;">
+                        <h3 style="color:white; display: none;">+420 776 518 533</h3>
+                        <h3 class="d-flex align-items-center text-nowrap mt-3 mt-md-0" style="color:white; padding: 10px;"><img src="https://www.platitmene.cz/img/icon-pig.png" height="37px;" class="mr-2">Fixace ceny na 1 rok</h3>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <div class="container-fluid p-0 px-4">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <p class="text-center text-white mt-5"><span><img src="img/idea.png" alt="" class="img-fluid mr-3"></span>Zjistěte <span class="font-weight-bold">zdarma</span>, kolik můžete ročně ušetřit, třeba až 15 000 Kč!</p>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5 mx-auto mb-5 formular" id="calcForm">
+                    <h3 class="text-uppercase font-weight-bold text-center my-4">Kalkulačka energií</h3>
+                    <p class="text-center mx-5"><b>Zadejte</b> několik údajů a jednoduše zjistíte o kolik můžete <b>platit méně!</b></p>
+                    <hr class="mb-4" />
+                    <form action="process.php" method="post">
+                        <div class="form-group px-4 row riadokP">
+                            <legend class="col-form-label col-sm-12">
+                                <b>Na čem chcete platit méně?</b>
+                            </legend>    
+                            <div class="col-12">
+                                <div class="form-check form-check-inline pt-0 mb-2 mb-sm-0 ml-sm-0 mr-0 rd" style="border: 1px solid #312783; border-radius: 4px; padding:8px; padding-top:0; box-shadow: 0 3px 4px 0 rgba(34,51,153,.22); width: 49.4%;">
+                                    <div class="radio-item mt-1">
+                                        <input class="form-check-input" type="radio" name="typ" id="pe" value="Plyn + Elektrina" checked>
+                                        <label class="form-check-label" for="pe">Plyn + Elektřina</label>
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-inline pt-0 mr-0 rd"  style="border: 1px solid #312783; border-radius: 4px; padding:8px; box-shadow: 0 3px 4px 0 rgba(34,51,153,.22); width: 49.5%;">
+                                    <div class="radio-item mt-1">
+                                        <input class="form-check-input" type="radio" name="typ" id="e" value="Elektrina" onclick="otherclick()">
+                                        <label class="form-check-label" for="e">Elektřina</label>
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-inline pt-0 mb-2 mb-sm-0 ml-sm-0 mr-0 rd mt-2" style="border: 1px solid #312783; border-radius: 4px; padding:8px; padding-top:0; box-shadow: 0 3px 4px 0 rgba(34,51,153,.22); width: 49.4%;">
+                                    <div class="radio-item mt-1">
+                                        <input class="form-check-input" type="radio" name="typ" id="internet" value="Voda" onclick="internetclick()">
+                                        <label class="form-check-label" for="internet">Internet</label>
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-inline pt-0 mb-2 mb-sm-0 ml-sm-0 mr-0 rd mt-2" style="border: 1px solid #312783; border-radius: 4px; padding:8px; padding-top:0; box-shadow: 0 3px 4px 0 rgba(34,51,153,.22); width: 49.4%;">
+                                    <div class="radio-item mt-1">
+                                        <input class="form-check-input" type="radio" name="typ" id="Vše" value="Vše" onclick="internetclick()">
+                                        <label class="form-check-label" for="Vše">Plyn + energie + internet</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                           
+                        <div class="form-group row px-4 riadokP">
+                            <legend class="col-form-label col-sm-12 pt-0">
+                                <b id="text_internet">Kolik měsíčně platíte za energie?</b>
+                                <br>Přišel Vám zdražovací dopis? Zafixujeme Vám skvělou cenu min na 1 rok
+                            </legend>    
+                            <div class="col-12 ml-2">
+                                <div class="form-group mb-0">
+                                    <input type="text" id="zalohy" name="zalohy" placeholder=" Kč" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group px-4 row riadokP">
+                            <label for="kraj" class="col-sm-12 col-form-label font-weight-bold">Kraj</label>
+                            <div class="col-12">
+                                <div style="">
+                                    <select class="form-control" id="kraj" name="kraj" required>
+                                        <option value="">- vyberte kraj -</option>
+                                        <option value="Jihočeský">Jihočeský</option>
+                                        <option value="Jihomoravský">Jihomoravský</option>
+                                        <option value="Karlovarský">Karlovarský</option>
+                                        <option value="Královehradecký">Královehradecký</option>
+                                        <option value="Liberecký">Liberecký</option> 
+                                        <option value="Moravskoslezský">Moravskoslezský</option>
+                                        <option value="Olomoucký">Olomoucký</option>
+                                        <option value="Pardubický">Pardubický</option>
+                                        <option value="Plzeňský">Plzeňský</option>
+                                        <option value="Praha">Praha</option>
+                                        <option value="Středočeský">Středočeský</option>
+                                        <option value="Ústecký">Ústecký</option>
+                                        <option value="Vysočina">Vysočina</option>
+                                        <option value="Zlínský">Zlínský</option>   
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row px-4 riadokP">
+                            <label for="kraj" class="col-sm-12 col-form-label font-weight-bold">Současný dodavatel</label>
+                            <div class="col-12">
+                                <select class="form-control" id="dodavatel" name="dodavatel" required>
+                                    <option value="">- vyberte dodavatele -</option>
+                                    <option value="Neznám dodavatele">&times; Neznám dodavatele</option>
+                                    <option value="A-PLUS Energie">Jsem v DPI</option>
+                                    <option value="A-PLUS Energie">A-PLUS Energie</option>
+                                    <option value="Alpiq Retail CZ s.r.o.">Alpiq Retail CZ s.r.o.</option>
+                                    <option value="ARMEX ENERGY, a.s.">ARMEX ENERGY, a.s.</option>
+                                    <option value="BIDLI energie, a.s.">BIDLI energie, a.s.</option>
+                                    <option value="Blue – Gas">Blue – Gas</option>
+                                    <option value="Blue Gas s.r.o.">Blue Gas s.r.o.</option>
+                                    <option value="Brodská plynárenská s.r.o.">Brodská plynárenská s.r.o.</option>
+                                    <option value="CARBOUNION BOHEMIA, spol. s r.o.">CARBOUNION BOHEMIA, spol. s r.o.</option>
+                                    <option value="CENTROPOL ENERGY, a.s.">CENTROPOL ENERGY, a.s.</option>
+                                    <option value="Clever Energies">Clever Energies</option>
+                                    <option value="COMFORT ENERGY s.r.o.">COMFORT ENERGY s.r.o.</option>
+                                    <option value="CONTE spol. s. r. o.">CONTE spol. s. r. o.</option>
+                                    <option value="CORASTA s.r.o.">CORASTA s.r.o.</option>
+                                    <option value="Czech Energy s.r.o.">Czech Energy s.r.o.</option>
+                                    <option value="česká energetická budoucnost">česká energetická budoucnost</option>
+                                    <option value="česká regionální energetika">česká regionální energetika</option>
+                                    <option value="české teplo s.r.o.">české teplo s.r.o.</option>
+                                    <option value="český Energetický Dodavatel a.s.">český Energetický Dodavatel a.s.</option>
+                                    <option value="čEZ Prodej, a. s.">čEZ Prodej, a. s.</option>
+                                    <option value="čM ENERGETIKA">čM ENERGETIKA</option>
+                                    <option value="Dobrá energie, s.r.o.">Dobrá energie, s.r.o.</option>
+                                    <option value="český Energetický Dodavatel a.s.">český Energetický Dodavatel a.s.</option>
+                                    <option value="E.ON Energie, a.s.">E.ON Energie, a.s.</option>
+                                    <option value="EAGLE ENERGY">EAGLE ENERGY</option>
+                                    <option value="eCENTRE">eCENTRE</option>
+                                    <option value="EGO energie">EGO energie</option>
+                                    <option value="Elgas Energy s.r.o.">Elgas Energy s.r.o.</option>
+                                    <option value="ELIMON a.s.">ELIMON a.s.</option>
+                                    <option value="Enbezo s.r.o.">Enbezo s.r.o.</option>
+                                    <option value="Eneka s.r.o.">Eneka s.r.o.</option>
+                                    <option value="Energetický regulační úřad">Energetický regulační úřad</option>
+                                    <option value="Energie čS, a.s.">Energie čS, a.s.</option>
+                                    <option value="Energie na doma s.r.o.">Energie na doma s.r.o.</option>
+                                    <option value="Energie pro život s.r.o.">Energie pro život s.r.o.</option>
+                                    <option value="ENERGOFIN">ENERGOFIN</option>
+                                    <option value="ENERGY BEES a.s.">ENERGY BEES a.s.</option>
+                                    <option value="ENRA SERVICES s.r.o.">ENRA SERVICES s.r.o.</option>
+                                    <option value="EP ENERGY TRADING, a.s.">EP ENERGY TRADING, a.s.</option>
+                                    <option value="eYello CZ, k. s.">eYello CZ, k. s.</option>
+                                    <option value="FONERGY s.r.o.">FONERGY s.r.o.</option>
+                                    <option value="Fosfa, a.s.">Fosfa, a.s.</option>
+                                    <option value="Františkovy Energie">Františkovy Energie</option>
+                                    <option value="Gas International s.r.o.">Gas International s.r.o.</option>
+                                    <option value="Gazela Energy">Gazela Energy</option>
+                                    <option value="General Energy a. s.">General Energy a. s.</option>
+                                    <option value="HALIMEDES, a.s.">HALIMEDES, a.s.</option>
+                                    <option value="Hanácká plynárenská s.r.o.">Hanácká plynárenská s.r.o.</option>
+                                    <option value="Hradecké Plynárny">Hradecké Plynárny</option>
+                                    <option value="IN ENERGIE">IN ENERGIE</option>
+                                    <option value="innogy (RWE)">innogy (RWE)</option>
+                                    <option value="innogy česká republika a.s.">innogy česká republika a.s.</option>
+                                    <option value="Karlovarská plynárenská s.r.o.">Karlovarská plynárenská s.r.o.</option>
+                                    <option value="LAMA energy a.s.">LAMA energy a.s.</option>
+                                    <option value="Lidová energie">Lidová energie</option>
+                                    <option value="Lumius, spol. s r.o.">Lumius, spol. s r.o.</option>
+                                    <option value="Maxim Energy, a.s.">Maxim Energy, a.s.</option>
+                                    <option value="MDI Energy s.r.o.">MDI Energy s.r.o.</option>
+                                    <option value="Microenergy">Microenergy</option>
+                                    <option value="MND a.s.">MND a.s.</option>
+                                    <option value="Moravská plynárenská s.r.o.">Moravská plynárenská s.r.o.</option>
+                                    <option value="Nano Energies Trade s.r.o.">Nano Energies Trade s.r.o.</option>
+                                    <option value="Obecní plynárna s.r.o.">Obecní plynárna s.r.o.</option>
+                                    <option value="Pražská energetika, a.s.">Pražská energetika, a.s.</option>
+                                    <option value="Pražská plynárenská, a.s.">Pražská plynárenská, a.s.</option>
+                                    <option value="Primagas s.r.o.">Primagas s.r.o.</option>
+                                    <option value="První rodinná a.s.">První rodinná a.s.</option>
+                                    <option value="QUANTUM a.s.">QUANTUM a.s.</option>
+                                    <option value="Ray Energy">Ray Energy</option>
+                                    <option value="Rodinná energie">Rodinná energie</option>
+                                    <option value="Skautská energie">Skautská energie</option>
+                                    <option value="SPP, a.s.">SPP, a.s.</option>
+                                    <option value="Stabil Energy s.r.o.">Stabil Energy s.r.o.</option>
+                                    <option value="TGC Energie s.r.o.">TGC Energie s.r.o.</option>
+                                    <option value="Utylis Energie s.r.o.">Utylis Energie s.r.o.</option>
+                                    <option value="VEMEX Energie a.s.">VEMEX Energie a.s.</option>
+                                    <option value="Zelená elektřina">Zelená elektřina</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group px-4 row riadokP">
+                            <legend class="col-form-label col-sm-12">
+                                <b>Kde energie používáte?</b>
+                            </legend>    
+                            <div class="col-12">
+                                <div class="form-check form-check-inline pt-0 mb-2 ml-sm-0 mr-0 rd" style="border: 1px solid #312783; border-radius: 4px; padding:8px; padding-top:0; box-shadow: 0 3px 4px 0 rgba(34,51,153,.22); width: 49.4%;">
+                                    <div class="radio-item mt-1">
+                                        <input class="form-check-input" type="radio" name="bydlite" id="ano" value="Ano">
+                                        <label class="form-check-label" for="ano">Dům</label>
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-inline pt-0 mr-0 rd"  style="border: 1px solid #312783; border-radius: 4px; padding:8px; box-shadow: 0 3px 4px 0 rgba(34,51,153,.22); width: 49.4%;">
+                                    <div class="radio-item mt-1">
+                                        <input class="form-check-input" type="radio" name="bydlite" id="ne" value="Ne" checked>
+                                        <label class="form-check-label" for="ne">Byt</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group px-4 row riadokP foto" style="display:none;">
+                            <legend class="col-form-label col-sm-12">
+                                <b>Víte že máte nárok na dotaci na fotovoltaiku až 50%? Máte zájem o více informací?</b>
+                            </legend>    
+                            <div class="col-12 ml-1">                                            
+                                <div class="form-check">
+                                    <input class="form-check-input mr-1" type="checkbox" value="ano" name="fotovoltaika" id="fotovoltaika">                                  <label class="form-check-label" for="fotovoltaika">
+                                        <small style="color:black; display:block; height:20px;">Mám zájem o více informací</small>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group row px-4 riadokP">
+                            <legend class="col-form-label col-sm-12 pt-0">
+                                <b>Telefonní číslo</b>
+                                <br>Specialita Vám zavolá jen ohledně výhodnějších energií
+                            </legend>    
+                            <div class="col-12 ml-2">
+                                <div class="form-group mb-2">
+                                    <input type="text" id="cislo" name="cislo" placeholder="+420" minlength="9" required>
+			                    </div> 
+                                
+                                <div style="background: rgba(33,213,51,.15); padding:10px; border-radius:3px; margin-left: -8px; width: 100%; text-align:center; color: #312783; font-weight: 500;">
+Kromě běžných ceníků vám po telefonu představíme i neveřejné nabídky <strong style=" font-weight:900;"> až o 15 % levnější.</strong>
+</div>
+                                              
+                            </div>                     
+                        </div>
+                        <div class="form-group row px-4 riadokP" style=" display: none !important;">
+                            <legend class="col-form-label col-sm-12 pt-0">
+                                <b>E-mail</b>
+                            </legend>    
+                            <div class="col-12 ml-2">
+                                <div class="form-group mb-2">
+                                    <input type="text" id="email" name="email" placeholder="@">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row px-4 nabidkyP">  
+                            <div class="col-12 ml-1">
+                                <small class="ml-0" style="color:black;"><b>Zaškrtněte souhlasy pro zpracování osobních údajù:</b></small>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="suhlas1" required>
+                                    <label class="form-check-label" for="suhlas1">
+                                        <small style="color:black; display:block; height:20px;">rozumím <a href="https://www.platitmene.cz/souhlasou.html" target="_blank">zpracování dat</a> pro účel vybrání nabídky.</small>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row px-4">  
+                            <div class="col-12 ml-2 text-center">
+                                <input type="submit" class="btn-calc" name="submit" value="SROVNAT CENY">
+                                <small class="mt-2">Odesláním formuláře souhlasím s <a href="https://www.platitmene.cz/podminky.html" target="_blank">obchodními podmínkami.</a></small>
+                            </div>
+                        </div>
+                    </form>                         
+                </div>                
+            </div>
+        </div>
+        <div class="container-fluid p-0 px-4 lista" style="z-index: 9999;">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5 mx-auto text-center pt-2" style="opacity:80%;">
+                    <p>Přišel vám ZDRAŽOVACÍ DOPIS? Stačí zanechat kontakt a zdarma situaci vyřešíme, s garancí skvělé a neměnné ceny</p>                
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0 px-4 cookies" style="z-index: 9999; opacity:75%;">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5 mx-auto text-center pt-2">
+                    <p style="float: left;">Při poskytování služeb nám pomáhají soubory cookie.<br/>
+                    Využíváním tohoto webu s jejich používaním souhlasíte</p>
+                    <button style="float: right; margin-top: 10px; margin-bottom: 10px;" id="cookie">Souhlasím</button>                
+                </div>
+            </div>
+        </div>
+
+        <section class="bg-light-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Plaťte méně s ostatními</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                                       <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                    <div class="review-item">
+                        <div class="review-item-header">
+                            <span class="review-item-header-title">Petr, Plzeň</span>
+                            <span class="review-item-header-subtitle">Ušetří <span class='font-weight-bold'>8 530 Kč ročně</span> za energie</span>
+                        </div>
+                        <div class="review-item-body">
+                            <p>Petr díky nám získal exkluzivní nabídku na <strong>plyn a elektřinu</strong> a díky nám nám nyní platí mnohem méně za obě dvě komodity.</p>
+                            <div class="review-item-body-request">Požadavek: Levnější energie</div>
+                            <div class="review-item-body-footer">Petr získal podpultovou nabídku na plyn a elektřinu!</div>
+                        </div>
+                        <div class="review-item-footer">
+                            <a href='https://www.platitmene.cz/energie/'>Chci také platit méně za energie</a>                        </div>
+                    </div>
+                </div>
+                                    <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                    <div class="review-item">
+                        <div class="review-item-header">
+                            <span class="review-item-header-title">Magda, Písek</span>
+                            <span class="review-item-header-subtitle">Ušetří <span class='font-weight-bold'>4 325 Kč ročně</span> za energie</span>
+                        </div>
+                        <div class="review-item-body">
+                            <p>Magda si nechala překontrolovat své vyúčtování a konzultaci s naším operátorem společně zdarma vybrali řešení, díky kterému platí méně.</p>
+                            <div class="review-item-body-request">Požadavek: Kotrola přeplácení energií</div>
+                            <div class="review-item-body-footer">Magda už má vše nastaveno správně a platí taky správně.</div>
+                        </div>
+                        <div class="review-item-footer">
+                            <a href='https://www.platitmene.cz/energie/'>Nechci také přeplácet za energie</a>                        </div>
+                    </div>
+                </div>
+                                    <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                    <div class="review-item">
+                        <div class="review-item-header">
+                            <span class="review-item-header-title">Leoš, Brno</span>
+                            <span class="review-item-header-subtitle">Ušetří <span class='font-weight-bold'>9 450 Kč ročně</span> za plyn</span>
+                        </div>
+                        <div class="review-item-body">
+                            <p>Leoš si vybral levnějšího dodavatele plynu do rodinného domu, ale měl strach z vyřizování, vše jsme za něj zdarma vyřídili a již také platí méně.</p>
+                            <div class="review-item-body-request">Požadavek: Přechod k levnějšímu dodavateli</div>
+                            <div class="review-item-body-footer">Tak Leoš už je u bez práce u levnějšího dodavatele a také platí méně :)</div>
+                        </div>
+                        <div class="review-item-footer">
+                            <a href='https://www.platitmene.cz/energie/'>Chci také platit méně za energie</a>                        </div>
+                    </div>
+                </div>
+                
+                   
+               </div>
+           </div>
+       </div>            
+   </section>
+
+   
+   <section class="bg-dark-violet">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 mx-auto py-0 text-roboto pb-5 pt-3">
+                <div class="col-12 text-center py-4">
+                    <span class="font-weight-bold text-white">Poradím Vám jak můžete <span class="text-underline">PlatitMéně</span></span>
+                </div>
+                <div class="col-12 col-sm-6 pt-0 pb-4 pb-sm-0 float-left text-center text-md-right pr-3 pr-md-5">
+                    <img src="../img/icon-phone.png" height="31px;" class="pr-2 text-weight-bold"><a href="tel:+420 776 518 533" class="text-white">+420 777 111 222</a>
+                </div><div class="col-12 col-sm-6 pt-0 pb-0 pb-sm-0 float-left text-center text-md-left pl-3 pl-md-5">
+                    <img src="../img/icon-mail.png" height="27px;" class="pr-2 text-weight-bold"><a href="mailto:chci@platitmene.cz" class="text-white">chci@platitmene.cz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row mt-3 align-items-center">
+            <div class="col-12 col-sm-10 col-md-3 mx-auto pl-5 pr-5 pr-sm-0 py-3 text-roboto">
+                <div class="pt-0 pb-4 pb-sm-0 text-center text-md-left text-yellow">
+                    <img src="../img/icon-shield.png" height="31px;" class="pr-2">Žádní šmejdi a jejich nabídky
+                </div>
+            </div>
+					<div class="col-12 col-md-9 pt-0 pb-4 pb-sm-0 float-left text-center text-md-right text-violet">
+                        <a href="https://www.platitmene.cz/podminky.html" class="text-violet p-2">Obchodní podmínky</a>|
+                        <a href="https://www.platitmene.cz/souhlasou.html" class="text-violet p-2">Zpracování obchodních údajů</a>|
+                        <span class="text-violet p-2">Všechna práva vyhrazena 2021</span>
+                    </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/test.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){  
+        $("select:focus").parent().css("border", "3px solid #312783");
+        $("#ano").click(function() {
+            $(".foto").css("display","flex");                                
+        });
+        $("#ne").click(function() {
+            $(".foto").css("display","none");                                
+        });
+        $("#cookie").click(function() {
+            $(".cookies").css("display","none");                                
+        });
+    });
+</script>
+</body>
+</html>
