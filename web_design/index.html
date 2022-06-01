@@ -7,10 +7,16 @@
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/skins/color-1.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Style Switcher -->
+   <link href="styles/skins/color-2.css" rel="stylesheet" class="alternate-style" title="color-2" disabled>
+   <link href="styles/skins/color-3.css" rel="stylesheet" class="alternate-style" title="color-3" disabled>
+   <link href="styles/skins/color-4.css" rel="stylesheet" class="alternate-style" title="color-4" disabled>
+   <link href="styles/skins/color-5.css" rel="stylesheet" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="styles/style-switcher.css">
     <title>Web-deisgns</title>
 </head>
 <body>
-  
+    
 <!-- Main Container STart -->
 <div class="main-container">
     <!-- Aside Start -->
@@ -23,18 +29,18 @@
             <span></span>
         </div>
     <ul class="nav">
-        <li><a href="" class="active"><i class="fa fa-home"></i> Úvodní stránka</a></li>
-        <li><a href=""><i class="fa fa-user"> </i>Více informací</a></li>
-        <li><a href=""><i class="fa fa-list"></i>Služby</a></li>
-        <li><a href=""><i class="fa fa-briefcase"></i>Portfolio</a></li>
-        <li><a href=""><i class="fa fa-comments"></i>Kontakty</a></li>
+        <li><a onclick="navSection1()" id="navlink1" href="#" class="active"><i class="fa fa-home"></i> Úvodní stránka</a></li>
+        <li><a onclick="navSection2()" id="navlink2" href="#"><i class="fa fa-user"> </i>Více informací</a></li>
+        <li><a onclick="navSection3()" id="navlink3" href="#"><i class="fa fa-list"></i>Služby</a></li>
+        <li><a onclick="navSection4()" id="navlink4" href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+        <li><a onclick="navSection5()" id="navlink5" href="#"><i class="fa fa-comments"></i>Kontakty</a></li>
     </ul>
     </div>
     <!-- Aside End -->
     <!-- Main content start -->
     <div class="main-content">
         <!-- Home section Start -->
-        <section class="home section">
+        <section id="section1" class="home section">
             <div class="container">
                 <div class="row">
                     <div class="home-info padd-15">
@@ -52,7 +58,7 @@
         </section>
         <!-- Home section End -->
         <!-- About Section Start -->
-        <section class="about section ">
+        <section id="section2" class="about section hidden">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -229,7 +235,7 @@
         </section>
          <!-- About Section End -->
         <!-- Services section Start -->
-        <section class="service section  ">
+        <section id="section3" class="service section hidden">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -308,7 +314,7 @@
         </section>
         <!-- Services section End -->
         <!-- Portfolio section Start -->
-        <section class="portfolio section ">
+        <section id="section4" class="portfolio section hidden">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -362,7 +368,7 @@
         </section>
         <!-- Portfolio section End -->
          <!-- Conatcs us section Start -->
-        <section class="contact section ">
+        <section id="section5" class="contact section hidden">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -450,9 +456,28 @@
     <!-- Main content end -->
 </div>
 <!-- Main Container End -->
+<!-- style switcher Start -->
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas fa-moon"></i>
+    </div>
+    <h4>Barva stránek</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle(color-1)"></span>
+        <span class="color-2" onclick="setActiveStyle(color-2)"></span>
+        <span class="color-3" onclick="setActiveStyle(color-3)"></span>
+        <span class="color-4" onclick="setActiveStyle(color-4)"></span>
+        <span class="color-5" onclick="setActiveStyle(color-5)"></span>
+    </div>
+</div>
 
 
+<!-- style switcher End -->
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>

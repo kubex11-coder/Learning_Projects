@@ -41,7 +41,7 @@ ul {
     opacity: 1;
 }
 .hidden {
-    display: none !important;
+    display: none  !important;
 }
 .main-content {
     padding-left: 270px;
@@ -650,6 +650,9 @@ display: inline-block;
 .aside {
   left: -270px;  
 }
+.hidden {
+    display: block !important;
+}
 .main-content {
     padding-left: 0px;
 }
@@ -681,6 +684,7 @@ margin-left: 0px;
    }
 }
 @media (max-width: 767px) {
+    .contact .contact-info-item,
     .contact .contact-form .col-6,
     .portfolio .portfolio-item,
     .service .service-item,
