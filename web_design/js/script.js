@@ -78,3 +78,12 @@ section4.classList.add("hidden");
 section5.classList.remove("hidden");
 }
 console.log(section2)
+
+// Typing animation
+
+var typed = new Typed(".typing", {
+    strings:["", "Webových stránek", "Prezentačních Videí", "Grafických Návrhů"],
+    typeSpeed: 100,
+    BackSpeed: 60,
+    loop: true
+})
