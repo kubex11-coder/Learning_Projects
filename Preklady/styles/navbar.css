@@ -90,7 +90,8 @@ nav #title-logo:hover {
 
 @media (min-width: 768px) {
     nav #title-logo {
-        font-size: 1.5rem;  
+        font-size: 1.2rem;  
+        padding-left: 35px;
     }
 
 .web-display{
@@ -115,7 +116,7 @@ align-items: center;
 .web-display li a {
     text-decoration: none;
     color: var(--main-color);
-    font-size: 1.rem;
+    font-size: 0.9rem;
 }
 .web-display li a:hover {
     color: aliceblue;
@@ -144,7 +145,10 @@ align-items: center;
    min-height: 30px;
 }
 .web-display ul li a {
-   font-size: 1rem;
+   font-size: 0.9rem;
+}
+.web-display li i {
+    font-size: 0.8rem;
 }
 .dropdown1 {
     position: relative;
@@ -164,11 +168,12 @@ align-items: center;
 
 
 @media (min-width: 992px) {
+
 .web-display li {
     padding: 0 35px;
 }
 .web-display li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .vlajka {
     width: 40px;

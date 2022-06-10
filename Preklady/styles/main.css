@@ -20,11 +20,11 @@ header .text-header {
     text-align: center;
 }
 header h1 {
-    margin-bottom: 60px;
+    margin-bottom: 75px;
     color: var(--navy-blue);
 }
 header h2 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: var(--navy-blue) ;
 }
 header h2 span {
