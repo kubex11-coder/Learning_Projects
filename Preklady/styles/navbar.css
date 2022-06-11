@@ -84,8 +84,9 @@ nav #title-logo:hover {
     width: 30px;
     margin: 0 10px;
     position: relative;
-    top: 2px;
+    top: 10px;
 }
+
 
 
 @media (min-width: 768px) {
