@@ -113,8 +113,10 @@ form .row {
 }
 .contacts > p {
     text-align: center;
+    color: white;
     margin-bottom: 30px;
     letter-spacing: 3px;
+    font-size: 1.2rem;
 }
 .contacts h1 {
     padding-top: 30px;
