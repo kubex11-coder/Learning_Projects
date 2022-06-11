@@ -1,0 +1,149 @@
+:root {
+    --main-color:#F8C686;
+    --background-color: #565452;
+    --main-font: Calibri, sans-serif;
+    --navy-blue: #000080;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--main-font);
+}
+main {
+    width: 100%;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+main h1 {
+    margin: 70px 0 30px;
+    padding: 25px;
+    font-size: 2rem;
+    text-align: center;
+    color: #000080;
+}
+.sluzby-nadpis {
+    color: var(--background-color);
+}
+.sluzby-nadpis-right {
+    color: var(--background-color);
+}
+h2 {
+    margin-bottom: 20px;
+    color: var(--background-color);
+    font-size: 1.3rem;
+    text-align: center;
+}
+h3 {
+    color: var(--background-color);
+    padding-bottom: 10px;
+font-size: 1.2rem;
+text-align: center;
+}
+ul li {
+    padding-bottom: 5px;
+}
+ul {
+    padding-bottom: 20px;
+}
+li {
+    color: var(--background-color);
+}
+li h3 {
+    font-size: 1rem;
+    padding-bottom: 0;
+}
+p {
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--background-color);
+}
+p span {
+    color: #000080;
+}
+.sekce1, .sekce2, .sekce-img {
+    padding: 25px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: 400px;
+}
+.sekce-img {
+    display: none;
+}
+.row1 .sekce2 p {
+    line-height: 35px;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .row1 {
+        align-items: center;
+        justify-content: space-between
+    }
+    .sluzby-nadpis {
+        text-align: start;
+    }
+    .sekce1, .sekce2, .sekce-img {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    p {
+        text-align: start;
+        margin-bottom: 16px;
+    }
+    .sekce-img {
+        display: block;
+
+    }
+    .sekce-img img {
+        display: block;
+        width: 70%;
+       margin:  auto;
+    }
+    .row1 .sekce2 p {
+        display: table;
+        margin: 50px auto;
+    }
+    h2, h3 {
+        text-align: start;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+
+}
