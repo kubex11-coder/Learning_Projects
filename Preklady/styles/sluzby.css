@@ -32,10 +32,10 @@ main h1 {
     color: #000080;
 }
 .sluzby-nadpis {
-    color: var(--background-color);
+    color:#000080;
 }
 .sluzby-nadpis-right {
-    color: var(--background-color);
+    color:#000080;
 }
 h2 {
     margin-bottom: 20px;
@@ -70,6 +70,7 @@ p span {
 }
 .sekce1, .sekce2, .sekce-img {
     padding: 25px;
+    margin: auto;
     flex: 0 0 100%;
     max-width: 100%;
     min-height: 400px;

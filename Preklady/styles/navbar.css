@@ -45,6 +45,7 @@ nav {
     height: 60px;
     background-color: var(--background-color);
     position: relative;
+    z-index: 10;
 }
 nav #title-logo {
     margin-left: 25px;

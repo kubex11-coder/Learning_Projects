@@ -1,0 +1,68 @@
+:root {
+    --main-color:#F8C686;
+    --background-color: #565452;
+    --main-font: Calibri, sans-serif;
+    --navy-blue: #000080;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--main-font);
+}
+
+
+main {
+    height: 94vh;
+    position: relative;
+}
+.image-part {
+    background-image: url(../images/Herobanner.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    z-index: 1;
+} 
+.text-part {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+line-height: 25px;
+opacity: 1;
+width: 90%;
+}
+.text-part h1 {
+    margin-bottom: 50px;
+    color: #000080;
+    font-size: 2rem;
+}
+.text-part h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.text-part p {
+    font-size: 1rem;
+}
+@media (min-width: 768px) {
+    .text-part {
+        width: 70%;
+        }
+    .text-part h1 {
+        font-size: 2.5rem;
+    }
+    .text-part h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    .text-part p {
+        font-size: 1.2rem;
+    }
+
+}
