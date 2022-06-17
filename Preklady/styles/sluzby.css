@@ -80,6 +80,7 @@ p span {
     display: none;
 }
 .perex {
+    padding: 25px;
     line-height: 35px;
     font-size: 1.5rem;  
 }
