@@ -30,7 +30,7 @@ header h2 {
     font-size: 2rem;
     letter-spacing: 2px;
     margin-bottom: 40px;
-    padding-top: 80px;
+    padding-top: 40px;
     color: var(--navy-blue) ;
 }
 header h2 span {
@@ -63,6 +63,12 @@ header .image img {
 }
 .contact-form {
     padding: 30px 0;
+}
+header .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
 }
 
 form .row {
@@ -200,6 +206,7 @@ button {
 .text-input:focus {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
+
 p a {
     color: var(--main-color);
     text-decoration: none;
@@ -214,7 +221,7 @@ p a:hover {
 @media (min-width: 768px) {
     header {
         width: 90%;
-        height: 54vh;
+        height: 94vh;
         margin: 0 auto;
         margin-bottom: 25px;
         justify-content: space-between;
@@ -236,11 +243,15 @@ p a:hover {
     header .text-header {
         text-align: start;
     }
+ 
     .text-header .centered {
         text-align: center;
     }
+    .text-header img {
+        margin: auto;
+    }
     header .image img {
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
 
