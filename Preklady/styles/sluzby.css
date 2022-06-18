@@ -125,6 +125,10 @@ p span {
         width: 70%;
        margin:  auto;
     }
+    .preklady-ul {
+        position: relative;
+        left: -22px;
+    }
   
     .row1 .sekce2 p {
         display: table;
