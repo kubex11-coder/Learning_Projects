@@ -50,7 +50,7 @@ header .image img {
 }
 .contacts-container {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: var(--background-color);
     display: block;
     margin: auto;
@@ -216,6 +216,11 @@ p a:hover {
 }
 .GDPR {
     padding: 0 25px;
+}
+@media (min-width: 600px) {
+    .contacts-container {
+height: 100vh;
+    }
 }
 
 @media (min-width: 768px) {
