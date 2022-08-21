@@ -52,7 +52,7 @@ nav #title-logo {
     line-height: 60px;
     vertical-align: middle;
     color: var(--main-color);
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--main-color);
     text-decoration: none;
 }
@@ -86,6 +86,17 @@ nav #title-logo:hover {
     margin: 0 10px;
     position: relative;
     top: 10px;
+}
+.vlajky-mobil {
+position: absolute;
+top: 15%;
+right: 80px;
+}
+.vlajky-mobil li {
+    list-style: none;
+}
+.vlajky-mobil img {
+    margin-left: 2px;
 }
 
 
