@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $telefon = $_POST['telefon'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
-$to = "jakubdvorak91@seznam.cz";
+$to = "info@stepannekut.eu";
 
 $final_message = "Obdržel jste zprávu od uživatele $name \n".
 "S telefonním číslem: $telefon \n".
