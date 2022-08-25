@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $telefon = $_POST['telefon'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
-$to = "info@stepannekut.eu";
+$to = "stepan.nekut@volny.cz";
 
 $final_message = "Obdržel jste zprávu od uživatele $name \n".
 "S telefonním číslem: $telefon \n".
@@ -37,8 +37,9 @@ if ($sent) {
     </style>
     </head>
     <body>
-    <h1>Děkujeme</h1>
-    <p>Děkujeme Vám za Vaši zprávu</p>
+    <h1>Děkuji za Vaši zprávu!</h1>
+    <p>Ozvu se Vám co nejdříve. <br>
+    Štěpán Nekut</p>
     </body>
     </html>
     <?php
