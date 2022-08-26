@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $telefon = $_POST['telefon'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
-$to = "stepan.nekut@volny.cz";
+$to = "stepan.nekut@volny.cz, stepan.nekut@gmail.com";
 
 $final_message = "Obdržel jste zprávu od uživatele $name \n".
 "S telefonním číslem: $telefon \n".
@@ -26,12 +26,25 @@ if ($sent) {
     <title>Danke</title>
     <style>
         body {
-        text-align: center;
+            font-family: Calibri, sans-serif;;
+            background-color: #faf8f2;
+            text-align: center;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
+            letter-spacing: 1px;
+        }
+        h1 {
+            color: #000080;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        span {
+            font-weight: bold;
+            font-size: 1.5rem;
         }
 
     </style>
@@ -39,7 +52,7 @@ if ($sent) {
     <body>
     <h1>Vielen Dank für Ihre Nachricht!</h1>
     <p>Ich melde mich sobald wie möglich zurück. <br>
-    Stepan Nekur</p>
+    <span>Stepan Nekut</span></p>
     </body>
     </html>
     <?php
@@ -51,14 +64,28 @@ if ($sent) {
     <title>Something went wrong</title>
     <style>
         body {
-            width: 100%;
-            height: 100vh;
+            font-family: Calibri, sans-serif;;
+            background-color: #faf8f2;
+            text-align: center;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
+            letter-spacing: 1px;
         }
+        h1 {
+            color: #000080;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        span {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+    </style>
 
     </style>
     </head>
