@@ -1,23 +1,25 @@
-@include media-sm {
-nav ul li {
-    font-size: 0.7rem;
-   
-}
-
-
-}
 
 @include media-md {
+main {
+    width: 80%;
+}
 nav ul {
     float: none;
     margin-right: 0;
+    justify-content: space-around;
 }
 
 nav ul li {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    padding: 0 5px;
+
 }
+
 body main header {
-    flex-direction: column;
+    height: 700px;
+    display: block;
+    margin-bottom: 30px;
+    overflow: hidden;
 
     & .text-field, .img {
         max-width: 100%;
@@ -39,10 +41,42 @@ body main header {
         padding: 10px 25px;
 
     }
+}
 
+.projects h2 {
+    width: 100%;
+    text-align: center;
+}
 
+.projects .container {
+    display: block;
+    // flex-direction: column;
+    padding: 0;
+
+    & .card {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+    & .text {
+        height: fit-content;
+
+        & p {
+            padding-bottom: 1rem;
+        }
+    }
+    }
+}
 
 }
 
+@include media-sm {
+    main {
+        width: 100%;
+    }
+    .projects .container .card {
+        width: 80%;
 
+    }
 }
+  
