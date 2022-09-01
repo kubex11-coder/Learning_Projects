@@ -1,7 +1,7 @@
-Lokální rozchizení projektu:
+Lokální rozchození projektu:
 Pro rozchození projektu lokálně je potřeba stáhnout si index.html
-Následně main.css (případně je možné stáhnout všechny soubory .scss ve složce a "main.scss" si preprocesorem převést na "main.css")
-Pro zobrazení obrázků je potřeba stáhnout všechny img files ve složve "img"
+Následně main.css ve složce "css" (případně je možné stáhnout všechny soubory .scss ve stejné složce a "main.scss" si preprocesorem převést na "main.css")
+Pro zobrazení obrázků je potřeba stáhnout všechny img files ve složce "img"
 
 
 
