@@ -1,44 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap");
 
 :root {
---bg-black-900:#f2f2fc;
---bg-black-100: #fdf9ff;
---bg-black-50: #e8dfec;
---text-black-900: #302e4d;
---text-black-700: #504e70;
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
 }
 body.dark {
---bg-black-900:#151515;
---bg-black-100: #020102;
---bg-black-50: #393939;
---text-black-900: #ffffff;
---text-black-700: #e9e9e9;
+    --bg-black-900: #151515;
+    --bg-black-100: #020102;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
 }
 
 body {
-margin: 0;
-padding: 0;
-line-height: 1.5;
-font-size: 16px;
-font-family: "Poppins" sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "Poppins" sans-serif;
 }
 
 * {
-margin: 0;
-padding: 0;
-outline: none;
-text-decoration: none;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
-::before, ::after {
+::before,
+::after {
     box-sizing: border-box;
 }
 ul {
     list-style: none;
 }
-
 
 .section {
     background: var(--bg-black-900);
@@ -48,7 +46,7 @@ ul {
     opacity: 1;
 }
 .hidden {
-    display: none  !important;
+    display: none !important;
 }
 .main-content {
     padding-left: 270px;
@@ -67,9 +65,9 @@ ul {
     padding-bottom: 70px;
 }
 .section-title {
-flex: 0 0 100%;
-max-width: 100%;
-margin-bottom: 60px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
 }
 .section-title h2 {
     font-size: 40px;
@@ -96,7 +94,6 @@ margin-bottom: 60px;
     left: 0;
     margin-top: 8px;
 }
-
 
 .row {
     display: flex;
@@ -126,18 +123,18 @@ margin-bottom: 60px;
 
 /* aside */
 .aside {
-width: 270px;
-background: var(--bg-black-100);
-position: fixed;
-padding: 30px;
-height: 100%;
-left: 0;
-top: 0;
-display: flex;
-border-right: 1px solid var(--bg-black-50);
-justify-content: center;
-align-items: center;
-z-index: 10;
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    padding: 30px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    border-right: 1px solid var(--bg-black-50);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
 }
 
 .aside .logo {
@@ -148,12 +145,12 @@ z-index: 10;
 }
 
 .aside .logo a {
-color: var(--text-black-900);
-font-weight: 700;
-padding: 15px 20px;
-font-size: 20px;
-letter-spacing: 5px;
-position: relative;
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    position: relative;
 }
 
 .aside .logo a span {
@@ -197,11 +194,11 @@ position: relative;
     justify-content: center;
 }
 .aside .nav-toggler span {
-   height: 2px;
-   width: 18px;
-   background: var(--skin-color);
-   display: inline-block; 
-   position: relative;
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
 }
 .aside .nav-toggler span::before {
     content: "";
@@ -222,13 +219,12 @@ position: relative;
     left: 0;
 }
 .aside .nav {
-margin-top: 50px;
+    margin-top: 50px;
 }
 
 .aside .nav li {
-margin-bottom: 20px;
-display: block;
-
+    margin-bottom: 20px;
+    display: block;
 }
 .aside .nav li a {
     font-size: 16px;
@@ -269,9 +265,9 @@ h3.my-profession {
     color: var(--skin-color);
 }
 .home-info p {
-margin-bottom: 20px;
-font-size: 20px;
-color: var(--text-black-700);
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--text-black-700);
 }
 
 h3.hello span {
@@ -306,7 +302,7 @@ h3.hello span {
     left: 20px;
     top: -40px;
 }
-.home .home-img img{
+.home .home-img img {
     margin: auto;
     border-radius: 5px;
     height: 400px;
@@ -336,9 +332,9 @@ h3.hello span {
     color: var(--text-black-700);
 }
 .about .about-content .personal-info {
-flex: 0 0 50%;
-max-width: 50%;
-margin-top: 40px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 40px;
 }
 .about .about-content .personal-info .info-item {
     flex: 0 0 50%;
@@ -353,15 +349,15 @@ margin-top: 40px;
     border-bottom: solid 1px var(--bg-black-50);
 }
 .about .about-content .personal-info .info-item p span {
-font-weight: 400;
-color: var(--text-black-700);
-margin-left: 4px;
-display: inline-block;
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
 }
 .about .about-content .personal-info .buttons {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-top: 50px; 
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -402,7 +398,7 @@ display: inline-block;
     top: 0;
     height: 100%;
     border-radius: 4px;
-    background-color: var(--skin-color) ;
+    background-color: var(--skin-color);
 }
 .about .about-content .skills .skill-item .skill-percent {
     position: absolute;
@@ -412,11 +408,11 @@ display: inline-block;
     font-weight: 400;
     line-height: 40px;
 }
-.about .about-content .education, 
+.about .about-content .education,
 .about .about-content .experience {
     flex: 0 0 50%;
     max-width: 50%;
-    margin-top:  30px;
+    margin-top: 30px;
 }
 .about .about-content h3.title {
     font-size: 24px;
@@ -429,12 +425,12 @@ display: inline-block;
     max-width: 100%;
 }
 .about .about-content .timeline {
-background-color: var(--bg-black-100);
-padding: 30px 15px;
-border: 1px solid var(--bg-black-50);
-border-radius: 10px;
-width: 100%;
-position: relative;
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
 }
 .about .about-content .timeline .timeline-item {
     position: relative;
@@ -497,7 +493,7 @@ position: relative;
     max-width: 33.33%;
 }
 .service .service-item .service-item-inner {
-    background-color:  var(--bg-black-100);
+    background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
     padding: 30px 15px;
@@ -514,7 +510,7 @@ position: relative;
     display: block;
     margin: 0 auto 30px;
     text-align: center;
-    transition: all 0.3s ease ;
+    transition: all 0.3s ease;
 }
 .service .service-item .service-item-inner .icon .fa {
     font-size: 40px;
@@ -525,15 +521,15 @@ position: relative;
     background: var(--skin-color);
 }
 .service .service-item .service-item-inner:hover .icon .fa {
-font-size: 25px;
-color: #ffff;
+    font-size: 25px;
+    color: #ffff;
 }
 
 .service .service-item .service-item-inner h4 {
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-black-900);
-text-transform: capitalize;
+    text-transform: capitalize;
 }
 .service .service-item .service-item-inner p {
     font-size: 16px;
@@ -545,9 +541,9 @@ text-transform: capitalize;
     padding-bottom: 40px;
 }
 .portfolio .portfolio-heading {
-flex: 0 0 100%;
-max-width: 100%;
-margin-bottom: 40px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
 }
 .portfolio .portfolio-heading h2 {
     color: var(--text-black-900);
@@ -563,16 +559,16 @@ margin-bottom: 40px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-} 
+}
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
     display: block;
 }
 .portfolio .portfolio-item-inner:hover {
-   border: 6px solid var(--skin-color);
+    border: 6px solid var(--skin-color);
 }
 
-/* KONTAKTY SEKCE */    
+/* KONTAKTY SEKCE */
 
 .contact-title {
     color: var(--skin-color);
@@ -586,16 +582,14 @@ margin-bottom: 40px;
     font-size: 15px;
     margin-bottom: 35px;
 }
-.contact .contact-info-item
-{
+.contact .contact-info-item {
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
     margin-bottom: 50px;
 }
 .contact .contact-info-item .icon {
-display: inline-block;
-
+    display: inline-block;
 }
 .contact .contact-info-item .icon .fa {
     font-size: 25px;
@@ -617,12 +611,10 @@ display: inline-block;
 .contact .contact-form {
     flex: 0 0 100%;
     max-width: 100%;
-
 }
 .contact .contact-form .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
-
 }
 .contact .contact-form .col-12 {
     flex: 0 0 100%;
@@ -630,7 +622,6 @@ display: inline-block;
 }
 .contact .contact-form .form-item {
     margin-bottom: 20px;
-
 }
 .contact .contact-form .form-item .form-control {
     width: 100%;
@@ -652,45 +643,59 @@ display: inline-block;
 .contact .contact-form .btn {
     height: 50px;
     padding: 0 50px;
+}
 
+.hire-me {
+    display: block;
+    width: 180px;
+}
+.hire-me-mobile {
+    display: none;
 }
 
 @media (max-width: 1199px) {
-.aside {
-  left: -270px;  
-}
-.hidden {
-    display: block !important;
-}
-.main-content {
-    padding-left: 0px;
-}
-.about .about-content .personal-info .info-item p span {
-display: block;
-margin-left: 0px;
-}
+    .aside {
+        left: -270px;
+    }
+    .hidden {
+        display: block !important;
+    }
+    .main-content {
+        padding-left: 0px;
+    }
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0px;
+    }
+    .hire-me {
+        display: none;
+    }
+    .hire-me-mobile {
+        display: block;
+        width: 180px;
+    }
 }
 
 @media (max-width: 991px) {
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-   
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
     .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
-   .home .home-img {
-       flex: 0 0 100%;
-       max-width: 100%;
-   }
-   .home .home-img::after, 
-   .home .home-img::before {
-       display: none;
-   }
+    .home .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img::after,
+    .home .home-img::before {
+        display: none;
+    }
 }
 @media (max-width: 767px) {
     .contact .contact-info-item,
@@ -709,7 +714,4 @@ margin-left: 0px;
         position: relative;
         top: 25px;
     }
-    
-
-    
 }
