@@ -1,0 +1,46 @@
+@media screen and (max-width: 930px) {
+    .herobanner {
+        width: 100%;
+
+        &__wrapper {
+            display: block;
+
+            .text-section {
+                height: 40vh;
+                width: 100%;
+            }
+
+            .video-section {
+                height: 50vh;
+                width: 100%;
+
+                video {
+                    opacity: 90%;
+                    width: 100%;
+                    top: -0%;
+                    left: 0%;
+                    margin: auto;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 420px) {
+    .herobanner {
+        &__wrapper {
+            .text-section {
+                height: 50vh;
+            }
+            .video-section {
+                height: 40vh;
+
+                video {
+                    width: 150%;
+                    top: -10%;
+                    left: -30%;
+                }
+            }
+        }
+    }
+}
