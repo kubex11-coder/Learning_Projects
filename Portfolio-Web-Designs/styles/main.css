@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/seven-deadly-sins");
+@import url("https://fonts.cdnfonts.com/css/sylfaen");
 .herobanner {
   height: 100vh;
   width: 80%;
@@ -15,6 +17,22 @@
   color: #d4c0b4;
   width: 40%;
   flex: 40%;
+  z-index: 10;
+}
+.herobanner__wrapper .text-section h1 {
+  margin-top: 150px;
+  font-size: 80px;
+  font-family: "Seven deadly sins", sans-serif;
+  color: #d4c0b4;
+}
+.herobanner__wrapper .text-section h1 span {
+  color: #eb7c1b;
+}
+.herobanner__wrapper .text-section p {
+  font-size: 16px;
+  font-family: "Sylfaen", sans-serif;
+  letter-spacing: 1px;
+  padding: 10px 0;
 }
 .herobanner__wrapper .video-section {
   height: 90vh;
@@ -22,6 +40,7 @@
   position: relative;
   width: 60%;
   flex: 60%;
+  z-index: 1;
 }
 .herobanner__wrapper .video-section video {
   position: absolute;
@@ -41,6 +60,19 @@
   .herobanner__wrapper .text-section {
     height: 40vh;
     width: 100%;
+  }
+  .herobanner__wrapper .text-section h1 {
+    margin-top: 0;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+  }
+  .herobanner__wrapper .text-section p {
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px 0;
   }
   .herobanner__wrapper .video-section {
     height: 50vh;
