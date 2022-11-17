@@ -17,17 +17,19 @@
             z-index: 10;
 
             h1 {
-                margin-top: 250px;
-                font-size: 120px;
+                margin-top: 200px;
+                font-size: 150px;
                 font-family: $herobanner-font;
                 color: $secondary-color;
+                text-shadow: 5px 5px #509915;
 
                 span {
                     color: $primary-color;
+                    text-shadow: 5px 5px $secondary-color;
                 }
             }
             h2 {
-                font-size: 30px;
+                font-size: 24px;
                 font-family: $main-font;
                 letter-spacing: 0px;
                 padding: 5px 0;
