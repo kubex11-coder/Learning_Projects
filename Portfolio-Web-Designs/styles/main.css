@@ -257,6 +257,7 @@ body {
     top: 0%;
     left: 0%;
     margin: auto;
+    transform: translateY(0);
   }
 }
 @media screen and (max-width: 420px) {
