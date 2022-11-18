@@ -1,7 +1,6 @@
 @import "config";
 @import "variables";
 @import "herobanner";
-@import "responzive";
 
 * {
     box-sizing: border-box;
@@ -13,10 +12,8 @@ body {
     background-color: black;
 }
 
-.button {
-    background-color: #509915;
-    margin: 100px 0;
-    padding: 5px;
-    font-family: $primary-color;
-    color: $secondary-color;
+.no-web {
+    display: none;
 }
+
+@import "responzive";
