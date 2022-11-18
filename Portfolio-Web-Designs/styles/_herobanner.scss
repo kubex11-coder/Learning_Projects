@@ -16,6 +16,7 @@
             padding: 0;
             text-decoration: none;
             font-size: 20px;
+            text-shadow: 2px 2px #686967;
 
             &:hover {
                 color: $primary-color;
@@ -111,14 +112,16 @@
             h1 {
                 margin-top: 150px;
                 font-size: 150px;
-                letter-spacing: 2px;
+                letter-spacing: 5px;
                 font-family: $herobanner-font;
                 color: $secondary-color;
-                text-shadow: 5px 5px #509915;
+                // text-shadow: 15px 15px #509915;
+                text-shadow: -10px 10px #686967;
 
                 span {
                     color: $primary-color;
-                    text-shadow: 5px 5px $secondary-color;
+                    // text-shadow: 5px 5px $secondary-color;
+                    text-shadow: -10px 10px #686967;
                 }
             }
             h2 {
@@ -128,6 +131,7 @@
                 letter-spacing: 0px;
                 padding: 5px 0;
                 color: $primary-color;
+                text-shadow: -1px 1px #686967;
             }
 
             p {
@@ -135,6 +139,7 @@
                 font-family: $main-font;
                 letter-spacing: 0px;
                 padding: 5px 0;
+                text-shadow: -1px 1px #686967;
             }
 
             .button {
