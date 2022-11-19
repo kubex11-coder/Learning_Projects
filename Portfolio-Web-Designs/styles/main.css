@@ -180,7 +180,9 @@ body {
     width: 100%;
   }
   .herobanner__navbar {
-    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
   }
   .herobanner__navbar .no-web {
     display: block;
@@ -225,20 +227,20 @@ body {
   }
   .herobanner__wrapper .text-section h1 {
     margin-top: 0;
-    padding-top: 50px;
+    padding-top: 20px;
     width: 100%;
     text-align: center;
-    font-size: 100px;
+    font-size: 60px;
   }
   .herobanner__wrapper .text-section h2 {
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
     text-align: center;
     padding: 5px 0;
   }
   .herobanner__wrapper .text-section p {
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     padding: 5px 0;
   }
@@ -248,7 +250,7 @@ body {
     margin: 20px auto;
     width: 45%;
     font-size: 16px;
-    padding: 20px 25px;
+    padding: 15px 5px;
   }
   .herobanner__wrapper .video-section {
     height: 50vh;
@@ -260,12 +262,15 @@ body {
     top: 0%;
     left: 0%;
     margin: auto;
-    transform: translateY(0);
+    transform: translateY(-5%);
   }
 }
 @media screen and (max-width: 420px) {
   .herobanner__wrapper .text-section {
     height: 50vh;
+  }
+  .herobanner__wrapper .text-section h1 {
+    padding-top: 0px;
   }
   .herobanner__wrapper .text-section .button {
     width: 60%;
@@ -276,6 +281,6 @@ body {
   .herobanner__wrapper .video-section video {
     width: 150%;
     top: -10%;
-    left: -30%;
+    left: -25%;
   }
 }/*# sourceMappingURL=main.css.map */
