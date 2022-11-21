@@ -80,14 +80,14 @@
                     }
                 }
                 h2 {
-                    font-size: 20px;
+                    font-size: 16px;
                     width: 100%;
                     text-align: center;
                     padding: 0;
                     margin-bottom: 0;
                 }
                 p {
-                    font-size: 16px;
+                    font-size: 12px;
                     text-align: center;
                     padding: 0;
                     width: 100%;
@@ -97,7 +97,7 @@
                     letter-spacing: 0;
                     margin: 20px auto;
                     width: 45%;
-                    font-size: 16px;
+                    font-size: 12px;
                     padding: 15px 5px;
                 }
                 &__social-icons {
@@ -247,15 +247,20 @@
                     font-size: 60px;
                 }
                 h2 {
-                    font-size: 16px;
+                    font-size: 12px;
                 }
                 p {
                     width: 100%;
-                    font-size: 14px;
+                    font-size: 10px;
                 }
-
                 .button {
-                    width: 60%;
+                    padding: 10px 25px;
+                    font-size: 10px;
+                }
+                &__social-icons {
+                    &__one-icon {
+                        font-size: 1.5rem;
+                    }
                 }
             }
             .video-section {

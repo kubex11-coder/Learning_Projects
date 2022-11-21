@@ -425,14 +425,14 @@ body {
     text-shadow: -5px 5px #686967;
   }
   .herobanner__wrapper .text-section h2 {
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
     text-align: center;
     padding: 0;
     margin-bottom: 0;
   }
   .herobanner__wrapper .text-section p {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     padding: 0;
     width: 100%;
@@ -442,7 +442,7 @@ body {
     letter-spacing: 0;
     margin: 20px auto;
     width: 45%;
-    font-size: 16px;
+    font-size: 12px;
     padding: 15px 5px;
   }
   .herobanner__wrapper .text-section__social-icons {
@@ -563,14 +563,18 @@ body {
     font-size: 60px;
   }
   .herobanner__wrapper .text-section h2 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .herobanner__wrapper .text-section p {
     width: 100%;
-    font-size: 14px;
+    font-size: 10px;
   }
   .herobanner__wrapper .text-section .button {
-    width: 60%;
+    padding: 10px 25px;
+    font-size: 10px;
+  }
+  .herobanner__wrapper .text-section__social-icons__one-icon {
+    font-size: 1.5rem;
   }
   .herobanner__wrapper .video-section {
     height: 55vh;
