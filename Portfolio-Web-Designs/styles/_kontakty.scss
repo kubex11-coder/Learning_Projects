@@ -1,0 +1,110 @@
+.kontakty-section {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background: url(../img/phone\ remake.png);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        font-size: 100px;
+        letter-spacing: 5px;
+
+        font-family: $herobanner-font;
+        color: $secondary-color;
+
+        text-shadow: -10px 10px $primary-color;
+    }
+
+    .contacts-wrapper {
+        display: flex;
+
+        .contact-info-wrapper {
+            width: 50%;
+            flex: 50%;
+            // height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .contact-info-item {
+                padding: 50px;
+                padding-left: 300px;
+
+                .icon {
+                    font-size: 25px;
+                    color: $primary-color;
+                }
+
+                h4 {
+                    color: $secondary-color;
+                    font-size: 25px;
+                }
+
+                p {
+                    color: $secondary-color;
+                    font-size: 20px;
+                }
+            }
+        }
+        form {
+            position: relative;
+            margin-top: -100px;
+            width: 50%;
+            flex: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            input {
+                text-align: center;
+                width: 50%;
+                padding: 15px 0;
+                margin: 25px 0;
+                border-radius: 15px;
+            }
+
+            textarea {
+                text-align: center;
+                width: 50%;
+                padding: 50px 0;
+                margin: 25px 0;
+                border-radius: 15px;
+            }
+
+            button {
+                position: absolute;
+                bottom: 5%;
+                left: 25%;
+                transform: translateX(-50%);
+                display: inline-block;
+                cursor: pointer;
+                margin: 20px 0px;
+                padding: 15px 50px;
+                background-color: #509915;
+                border-radius: 15px;
+                text-transform: uppercase;
+                font-size: 20px;
+                letter-spacing: 2px;
+                text-align: center;
+                font-family: $main-font;
+                font-weight: 800;
+                color: black;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+}

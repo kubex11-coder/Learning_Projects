@@ -6,6 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Web-Designs</title>
         <link rel="stylesheet" href="styles/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
         <div class="herobanner">
@@ -34,7 +41,14 @@
                     <p>"Máme zápal pro věc!"</p>
 
                     <a href="#" class="button">Kontaktujte mě</a>
-                    <a href="#" class="button">Kontaktujte mě</a>
+                    <div class="text-section__social-icons">
+                        <a href="#" class="text-section__social-icons__one-icon"
+                            ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                        <a href="#" class="text-section__social-icons__one-icon"
+                            ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                    </div>
                 </div>
                 <div class="video-section">
                     <video
@@ -47,6 +61,116 @@
                 </div>
             </div>
         </div>
+        <div class="sluzby">
+            <div class="sluzby__sluzby-img">
+                <img src="img/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="" />
+            </div>
+            <div class="sluzby__text-section">
+                <h1>WEB<span>TVORBA</span></h1>
+                <h2>Poskytujeme tyto služby:</h2>
+                <ul>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sluzby" id="sluzby-second">
+            <div class="sluzby__text-section">
+                <h1>VIDEO<span>TVORBA</span></h1>
+                <h2>Poskytujeme tyto služby:</h2>
+                <ul>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                    <li>Poskytujeme tyto služby:</li>
+                </ul>
+            </div>
+            <div class="sluzby__sluzby-img">
+                <img
+                    src="img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg"
+                    alt=""
+                />
+            </div>
+        </div>
+        <div class="kontakty-section">
+            <h1>Kontakty</h1>
+            <div class="contacts-wrapper">
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Zavolejte my na</h4>
+                        <p>+420 774 403 576</p>
+                    </div>
+
+                    <div class="contact-info-item padd-15">
+                        <div class="icon">
+                            <i class="fa fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Kancelář</h4>
+                        <p>Mladá Boleslav</p>
+                    </div>
+
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>jakubdvorak91@seznam.cz</p>
+                    </div>
+
+                    <div class="contact-info-item padd-15">
+                        <div class="icon">
+                            <i class="fa fa-globe-europe"></i>
+                        </div>
+                        <h4>Web stránka</h4>
+                        <p>www.web-design.cz</p>
+                    </div>
+                </div>
+
+                <form action="mail.php" method="POST">
+                    >
+                    <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Jméno"
+                    />
+
+                    <input
+                        type="tel"
+                        name="telefon"
+                        class="form-control"
+                        placeholder="Telefon"
+                    />
+
+                    <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="E-mail"
+                    />
+
+                    <textarea
+                        id="text"
+                        type="text"
+                        class="text-input"
+                        placeholder="Text zprávy"
+                        name="message"
+                        cols="40"
+                        rows="5"
+                    ></textarea>
+
+                    <button type="submit" class="btn">Odeslat</button>
+                </form>
+            </div>
+        </div>
+
         <script src="script/main.js"></script>
     </body>
 </html>
