@@ -1,0 +1,19 @@
+3 responzive sekce.
+
+@mixin media-lg {
+    @media screen and (max-width: 1230px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 930px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 420px) {
+        @content;
+    }
+}

@@ -151,10 +151,11 @@
                 }
             }
             h2 {
-                font-size: 20px;
+                font-size: 16px;
+                margin-bottom: 30px;
             }
             ul li {
-                font-size: 16px;
+                font-size: 12px;
             }
         }
     }
@@ -222,10 +223,10 @@
 
                 button {
                     font-size: 16px;
-                    bottom: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    margin: 20px 0px;
+                    // bottom: 0;
+                    // left: 50%;
+                    // transform: translateX(-50%);
+                    margin: 20px auto;
                     padding: 10px 30px;
                     letter-spacing: 2px;
                 }

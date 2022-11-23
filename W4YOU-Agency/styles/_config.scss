@@ -1,0 +1,23 @@
+// NAVBAR START
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 1230px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 930px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 420px) {
+        @content;
+    }
+}
+// NAVBAR KONEC

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>W4YOU Agency</title>
+        <link rel="stylesheet" href="styles/main.css" />
+    </head>
+    <body>
+        <!-- NAVBAR START (pro opětovné použití je potřeba zkopírovat 
+            1.index (NAVBAR START až NAVBAR KONEC)
+            2._navbar.scss 
+            3. main.js - sekci NAVBAR) 
+            4. nadefinovat _variables (primary, secondary a tercialy-color) 
+            5. v _config.scss (od NAVBAR START po NAVBAR KONEC)-->
+        <!-- Mobilní navbar -->
+        <nav class="mobile-navbar">
+            <img src="img/pruhledny.png" alt="#" width="200px" />
+
+            <div class="nav">
+                <ul class="menu-nav">
+                    <li class="menu-nav__item">
+                        <a href="index.html" class="menu-nav__link">DOMŮ</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="about.html" class="menu-nav__link">O NÁS</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="projects.html" class="menu-nav__link"
+                            >PRACOVNÍ POZICE</a
+                        >
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="contact.html" class="menu-nav__link"
+                            >KONTAKTY</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </div>
+        </nav>
+        <!-- WEB navbar -->
+        <nav class="web-navbar">
+            <img src="img/pruhledny.png" alt="#" width="200px" />
+
+            <div class="nav-web">
+                <ul class="menu-nav">
+                    <li class="menu-nav__item active">
+                        <a href="index.html" class="menu-nav__link">DOMŮ</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="about.html" class="menu-nav__link">O NÁS</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="projects.html" class="menu-nav__link"
+                            >PRACOVNÍ POZICE</a
+                        >
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="contact.html" class="menu-nav__link"
+                            >KONTAKTY</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- NAVBAR KONEC-->
+        <section class="herobanner">d</section>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
