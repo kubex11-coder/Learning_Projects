@@ -94,7 +94,7 @@ nav {
             justify-content: center;
             height: 100vh;
             overflow: hidden;
-            background: $tercialy-color;
+            background: $secondary-color;
             list-style-type: none;
             z-index: 100;
             padding-right: 1rem;
@@ -116,7 +116,7 @@ nav {
 
             &__link {
                 display: inline-block;
-                color: $primary-color;
+                color: $tercialy-color;
                 font-size: 2rem;
                 text-decoration: none;
                 text-transform: uppercase;

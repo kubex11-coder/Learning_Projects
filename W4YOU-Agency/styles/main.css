@@ -84,7 +84,7 @@ nav .nav .menu-nav {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: rgb(255, 255, 255);
+  background: rgb(11, 172, 5);
   list-style-type: none;
   z-index: 100;
   padding-right: 1rem;
@@ -103,7 +103,7 @@ nav .nav .menu-nav__item.open {
 }
 nav .nav .menu-nav__link {
   display: inline-block;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -232,6 +232,7 @@ nav .nav .menu-nav__link:hover {
 }
 .herobanner__pozice__item p {
   margin-bottom: 25px;
+  padding: 0 10px;
 }
 .herobanner__pozice__item a {
   font-size: 1.5rem;
@@ -266,6 +267,7 @@ nav .nav .menu-nav__link:hover {
 .o-nas__text-section p {
   text-align: center;
   font-size: 1.5rem;
+  line-height: 40px;
 }
 .o-nas img {
   width: 50%;
@@ -411,6 +413,7 @@ a {
   }
   .o-nas__text-section p {
     font-size: 1rem;
+    line-height: 30px;
   }
   .o-nas img {
     display: block;
@@ -437,7 +440,7 @@ a {
   }
   .pozice__text-section ul li {
     font-size: 1rem;
-    margin-left: 30%;
+    margin-left: 20%;
   }
   .pozice img {
     display: block;
