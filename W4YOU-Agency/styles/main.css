@@ -12,15 +12,15 @@ nav {
 }
 nav img {
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   left: 1rem;
-  top: 0.1rem;
+  top: 1rem;
 }
 nav .menu-btn {
   position: absolute;
-  z-index: 1;
-  right: 1rem;
-  top: 1rem;
+  z-index: 10;
+  right: 1.5rem;
+  top: 1.5rem;
   height: 20px;
   width: 28px;
   cursor: pointer;
@@ -72,6 +72,7 @@ nav .nav {
   width: 100vw;
   opacity: 1;
   visibility: hidden;
+  z-index: 10;
 }
 nav .nav.open {
   visibility: visible;
@@ -83,9 +84,9 @@ nav .nav .menu-nav {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: rgb(222, 224, 221);
+  background: rgb(255, 255, 255);
   list-style-type: none;
-  z-index: 1;
+  z-index: 100;
   padding-right: 1rem;
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
@@ -173,11 +174,298 @@ nav .nav .menu-nav__link:hover {
 .herobanner {
   min-height: 90vh;
   width: 100%;
-  background-color: red;
+  background-color: white;
+  z-index: 1;
+}
+.herobanner__header {
+  position: relative;
+  height: 60vh;
+  background: url(../img/zesvetleny70.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.herobanner__header__text-section {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.herobanner__header__text-section h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px black;
+}
+.herobanner__header__text-section h2 {
+  color: black;
+  text-shadow: 1px 1px rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+.herobanner__header__text-section a {
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: rgb(11, 172, 5);
+  color: rgb(255, 255, 255);
+}
+.herobanner__header__text-section a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(11, 172, 5);
+}
+.herobanner__pozice {
+  text-align: center;
+  width: 80%;
+  height: 30vh;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 20px;
+}
+.herobanner__pozice__item {
+  margin: 20px;
+  min-width: 100%;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.herobanner__pozice__item h1 {
+  margin-top: 45px;
+  font-size: 2rem;
+}
+.herobanner__pozice__item p {
+  margin-bottom: 25px;
+}
+.herobanner__pozice__item a {
+  font-size: 1.5rem;
+  color: rgb(11, 172, 5);
+}
+.herobanner__pozice__item a:hover {
+  text-decoration: underline;
+}
+.herobanner__pozice__item:nth-child(2) {
+  background-color: rgb(75, 74, 74);
+  color: rgb(255, 255, 255);
+}
+
+.o-nas {
+  min-height: 70vh;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.o-nas__text-section {
+  width: 45%;
+  padding: 0 25px;
+  text-align: center;
+}
+.o-nas__text-section h1 {
+  color: rgb(11, 172, 5);
+  text-shadow: 1px 1px black;
+}
+.o-nas__text-section p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.o-nas img {
+  width: 50%;
+  align-self: flex-end;
+  border-radius: 25px;
+}
+
+.pozice {
+  min-height: 70vh;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pozice__text-section {
+  width: 45%;
+  padding: 0 25px;
+  text-align: center;
+  order: 2;
+}
+.pozice__text-section h1 {
+  font-size: 5rem;
+  color: rgb(11, 172, 5);
+  text-shadow: 1px 1px black;
+}
+.pozice__text-section ul li {
+  text-align: start;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-left: 150px;
+  list-style: disc;
+}
+.pozice__text-section ul li::marker {
+  color: rgb(11, 172, 5);
+}
+.pozice img {
+  order: 1;
+  width: 50%;
+  align-self: flex-end;
+  border-radius: 25px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 7rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1230px) {
+  .herobanner__pozice {
+    width: 90%;
+  }
+  .o-nas__text-section h1 {
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+  .o-nas__text-section p {
+    font-size: 1rem;
+  }
+  .o-nas img {
+    align-self: center;
+  }
+  .pozice__text-section h1 {
+    font-size: 4rem;
+  }
+  .pozice__text-section ul li {
+    text-align: start;
+    font-size: 1rem;
+    padding: 10px;
+    margin-left: 150px;
+  }
+  .pozice img {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 930px) {
+  .herobanner__header {
+    height: 90vh;
+  }
+  .herobanner__header__text-section {
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .herobanner__header__text-section h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+  }
+  .herobanner__header__text-section h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+  }
+  .herobanner__header__text-section a {
+    font-size: 1.5rem;
+  }
+  .herobanner .web-display {
+    display: none;
+  }
+  .o-nas {
+    min-height: 70vh;
+    width: 100%;
+    display: block;
+  }
+  .o-nas__text-section {
+    width: 100%;
+    margin: 0;
+    padding: 0 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .o-nas__text-section h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+  }
+  .o-nas__text-section p {
+    font-size: 1rem;
+  }
+  .o-nas img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .pozice {
+    min-height: 70vh;
+    width: 100%;
+    display: block;
+  }
+  .pozice__text-section {
+    width: 100%;
+    margin: 0;
+    padding: 0 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .pozice__text-section h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+  }
+  .pozice__text-section ul li {
+    font-size: 1rem;
+    margin-left: 30%;
+  }
+  .pozice img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .herobanner__header__text-section h1 {
+    font-size: 3rem;
+  }
+  .herobanner__header__text-section h2 {
+    font-size: 2rem;
+  }
+  .herobanner__header__text-section a {
+    font-size: 1rem;
+  }
+  .o-nas__text-section h1 {
+    font-size: 3rem;
+  }
+  .o-nas__text-section p {
+    font-size: 1rem;
+  }
+  .pozice__text-section h1 {
+    font-size: 2.5rem;
+  }
+  .pozice__text-section ul li {
+    font-size: 1rem;
+    margin-left: 10%;
+  }
 }/*# sourceMappingURL=main.css.map */
