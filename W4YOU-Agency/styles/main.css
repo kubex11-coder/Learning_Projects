@@ -84,7 +84,7 @@ nav .nav .menu-nav {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: rgb(11, 172, 5);
+  background: rgb(37, 37, 37);
   list-style-type: none;
   z-index: 100;
   padding-right: 1rem;
@@ -115,7 +115,7 @@ nav .nav .menu-nav__link {
   transition: all 0.5s ease-in-out;
 }
 nav .nav .menu-nav__link:hover {
-  color: rgb(11, 172, 5);
+  color: rgb(37, 37, 37);
 }
 
 .web-navbar {
@@ -152,7 +152,7 @@ nav .nav .menu-nav__link:hover {
   letter-spacing: 1px;
 }
 .web-navbar .nav-web .menu-nav__link:hover {
-  color: rgb(11, 172, 5);
+  color: rgb(37, 37, 37);
 }
 
 @media screen and (max-width: 1230px) {
@@ -202,12 +202,12 @@ nav .nav .menu-nav__link:hover {
 .herobanner__header__text-section a {
   font-size: 2rem;
   padding: 10px 20px;
-  background-color: rgb(11, 172, 5);
+  background-color: rgb(37, 37, 37);
   color: rgb(255, 255, 255);
 }
 .herobanner__header__text-section a:hover {
   background-color: rgb(255, 255, 255);
-  color: rgb(11, 172, 5);
+  color: rgb(37, 37, 37);
 }
 .herobanner__pozice {
   text-align: center;
@@ -236,7 +236,7 @@ nav .nav .menu-nav__link:hover {
 }
 .herobanner__pozice__item a {
   font-size: 1.5rem;
-  color: rgb(11, 172, 5);
+  color: rgb(37, 37, 37);
 }
 .herobanner__pozice__item a:hover {
   text-decoration: underline;
@@ -261,7 +261,7 @@ nav .nav .menu-nav__link:hover {
   text-align: center;
 }
 .o-nas__text-section h1 {
-  color: rgb(11, 172, 5);
+  color: rgb(37, 37, 37);
   text-shadow: 1px 1px black;
 }
 .o-nas__text-section p {
@@ -292,7 +292,7 @@ nav .nav .menu-nav__link:hover {
 }
 .pozice__text-section h1 {
   font-size: 5rem;
-  color: rgb(11, 172, 5);
+  color: rgb(37, 37, 37);
   text-shadow: 1px 1px black;
 }
 .pozice__text-section ul li {
@@ -303,7 +303,7 @@ nav .nav .menu-nav__link:hover {
   list-style: disc;
 }
 .pozice__text-section ul li::marker {
-  color: rgb(11, 172, 5);
+  color: rgb(37, 37, 37);
 }
 .pozice img {
   order: 1;
