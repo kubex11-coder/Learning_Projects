@@ -422,6 +422,17 @@ nav .nav .menu-nav__link:hover {
   font-weight: 500;
 }
 
+.footer {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
+.footer p {
+  font-size: 20px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
 * {
   margin: 0;
   padding: 0;
