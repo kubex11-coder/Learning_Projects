@@ -135,6 +135,66 @@
             margin: 0 auto;
         }
     }
+    .kontakty {
+        h1 {
+            padding-top: 50px;
+            font-size: 3.5rem;
+            font-weight: bolder;
+            margin-bottom: 50px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+
+        form {
+            button {
+                margin-top: 25px;
+                padding: 5px 15px;
+                font-size: 1.5rem;
+            }
+        }
+
+        .form-flex {
+            display: block;
+
+            .left-side {
+                .form-group {
+                    width: 100%;
+                    text-align: center;
+
+                    input {
+                        text-align: center;
+                        width: 90%;
+                        height: 2rem;
+                    }
+                }
+            }
+
+            .right-side {
+                .text-group {
+                    padding: 0px;
+                    width: 100%;
+                    text-align: center;
+
+                    textarea {
+                        text-align: center;
+                        width: 90%;
+                        height: 8rem;
+
+                        font-size: 1rem;
+                        font-weight: 600;
+
+                        &::placeholder {
+                            font-size: 1rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-sm {

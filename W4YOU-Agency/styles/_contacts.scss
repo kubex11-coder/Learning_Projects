@@ -1,0 +1,102 @@
+.kontakty {
+    margin-top: 100px;
+    height: 100vh;
+    background-color: #f5f5f5;
+
+    h1 {
+        padding-top: 100px;
+        text-transform: uppercase;
+        font-size: 5rem;
+        color: $secondary-color;
+        text-shadow: 1px 1px $primary-color;
+        width: 100%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    form {
+        button {
+            font-family: $main-font;
+            padding: 5px 25px;
+            font-size: 2rem;
+            color: white;
+            background-color: $secondary-color;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 25px;
+            cursor: pointer;
+            border: none;
+
+            &:hover {
+                color: $secondary-color;
+                background-color: white;
+            }
+        }
+    }
+
+    .form-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left-side {
+            min-width: 50%;
+            flex: 50%;
+
+            .form-group {
+                width: 100%;
+                text-align: end;
+
+                input {
+                    text-align: center;
+                    width: 50%;
+                    height: 3rem;
+                    margin-bottom: 25px;
+                    color: $secondary-color;
+                    font-size: 1rem;
+                    font-weight: 800;
+
+                    &::placeholder {
+                        color: $secondary-color;
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .right-side {
+            min-width: 50%;
+            flex: 50%;
+
+            .text-group {
+                padding: 50px;
+                width: 100%;
+                text-align: start;
+                position: relative;
+
+                textarea {
+                    text-align: center;
+                    width: 60%;
+                    height: 15rem;
+                    color: $secondary-color;
+                    font-size: 1.5rem;
+                    font-weight: 800;
+
+                    &::placeholder {
+                        font-family: $main-font;
+
+                        color: $secondary-color;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

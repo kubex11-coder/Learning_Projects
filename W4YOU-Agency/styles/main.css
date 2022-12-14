@@ -312,6 +312,116 @@ nav .nav .menu-nav__link:hover {
   border-radius: 25px;
 }
 
+.kontakty {
+  margin-top: 100px;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+.kontakty h1 {
+  padding-top: 100px;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: rgb(38, 86, 156);
+  text-shadow: 1px 1px black;
+  width: 100%;
+  text-align: center;
+}
+.kontakty p {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+.kontakty form button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 25px;
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(38, 86, 156);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 25px;
+  cursor: pointer;
+  border: none;
+}
+.kontakty form button:hover {
+  color: rgb(38, 86, 156);
+  background-color: white;
+}
+.kontakty .form-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kontakty .form-flex .left-side {
+  min-width: 50%;
+  flex: 50%;
+}
+.kontakty .form-flex .left-side .form-group {
+  width: 100%;
+  text-align: end;
+}
+.kontakty .form-flex .left-side .form-group input {
+  text-align: center;
+  width: 50%;
+  height: 3rem;
+  margin-bottom: 25px;
+  color: rgb(38, 86, 156);
+  font-size: 1rem;
+  font-weight: 800;
+}
+.kontakty .form-flex .left-side .form-group input::-moz-placeholder {
+  color: rgb(38, 86, 156);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.kontakty .form-flex .left-side .form-group input:-ms-input-placeholder {
+  color: rgb(38, 86, 156);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.kontakty .form-flex .left-side .form-group input::placeholder {
+  color: rgb(38, 86, 156);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.kontakty .form-flex .right-side {
+  min-width: 50%;
+  flex: 50%;
+}
+.kontakty .form-flex .right-side .text-group {
+  padding: 50px;
+  width: 100%;
+  text-align: start;
+  position: relative;
+}
+.kontakty .form-flex .right-side .text-group textarea {
+  text-align: center;
+  width: 60%;
+  height: 15rem;
+  color: rgb(38, 86, 156);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.kontakty .form-flex .right-side .text-group textarea::-moz-placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(38, 86, 156);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.kontakty .form-flex .right-side .text-group textarea:-ms-input-placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(38, 86, 156);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.kontakty .form-flex .right-side .text-group textarea::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(38, 86, 156);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -446,6 +556,57 @@ a {
     display: block;
     width: 90%;
     margin: 0 auto;
+  }
+  .kontakty h1 {
+    padding-top: 50px;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+  }
+  .kontakty p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  .kontakty form button {
+    margin-top: 25px;
+    padding: 5px 15px;
+    font-size: 1.5rem;
+  }
+  .kontakty .form-flex {
+    display: block;
+  }
+  .kontakty .form-flex .left-side .form-group {
+    width: 100%;
+    text-align: center;
+  }
+  .kontakty .form-flex .left-side .form-group input {
+    text-align: center;
+    width: 90%;
+    height: 2rem;
+  }
+  .kontakty .form-flex .right-side .text-group {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .kontakty .form-flex .right-side .text-group textarea {
+    text-align: center;
+    width: 90%;
+    height: 8rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .kontakty .form-flex .right-side .text-group textarea::-moz-placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .kontakty .form-flex .right-side .text-group textarea:-ms-input-placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .kontakty .form-flex .right-side .text-group textarea::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
 @media screen and (max-width: 320px) {
