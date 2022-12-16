@@ -5,6 +5,7 @@ const hamburger = document.querySelector(".menu-btn__burger")
 const navMenu = document.querySelector(".nav")
 const menuNav = document.querySelector(".menu-nav")
 const menuItems = document.querySelectorAll(".menu-nav__item")
+const navLinks = document.querySelectorAll("#navLink")
 
 // let showMenu = false;
 

@@ -75,8 +75,9 @@ nav {
     }
 
     .nav {
-        position: fixed;
+        position: absolute;
         top: 0;
+        // top: -100%;
         left: 0;
         width: 100vw;
         opacity: 1;
@@ -85,6 +86,8 @@ nav {
 
         &.open {
             visibility: visible;
+            // transform: translateY(100%);
+            // @include transition-ease;
         }
 
         .menu-nav {
