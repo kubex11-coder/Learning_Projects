@@ -433,6 +433,48 @@ nav .nav .menu-nav__link:hover {
   vertical-align: middle;
 }
 
+.nabizena-pozice {
+  min-height: 70vh;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nabizena-pozice #order1 {
+  order: 1;
+}
+.nabizena-pozice #order2 {
+  order: 2;
+}
+.nabizena-pozice__text-section {
+  width: 45%;
+  padding: 0 25px;
+  text-align: center;
+}
+.nabizena-pozice__text-section h1 {
+  font-size: 5rem;
+  color: rgb(38, 86, 156);
+  text-shadow: 1px 1px black;
+}
+.nabizena-pozice__text-section ul li {
+  text-align: start;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-left: 150px;
+  list-style: disc;
+}
+.nabizena-pozice__text-section ul li::marker {
+  color: rgb(38, 86, 156);
+}
+.nabizena-pozice img {
+  order: 1;
+  width: 50%;
+  align-self: flex-end;
+  border-radius: 25px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -484,6 +526,18 @@ a {
     margin-left: 150px;
   }
   .pozice img {
+    align-self: center;
+  }
+  .nabizena-pozice__text-section h1 {
+    font-size: 4rem;
+  }
+  .nabizena-pozice__text-section ul li {
+    text-align: start;
+    font-size: 1rem;
+    padding: 10px;
+    margin-left: 150px;
+  }
+  .nabizena-pozice img {
     align-self: center;
   }
 }
@@ -568,6 +622,33 @@ a {
     width: 90%;
     margin: 0 auto;
   }
+  .nabizena-pozice {
+    min-height: 70vh;
+    width: 100%;
+    display: block;
+  }
+  .nabizena-pozice__text-section {
+    width: 100%;
+    margin: 0;
+    padding: 0 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .nabizena-pozice__text-section h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+  }
+  .nabizena-pozice__text-section ul li {
+    font-size: 1rem;
+    margin-left: 20%;
+  }
+  .nabizena-pozice img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
   .kontakty h1 {
     padding-top: 50px;
     font-size: 3.5rem;
@@ -640,6 +721,13 @@ a {
     font-size: 2.5rem;
   }
   .pozice__text-section ul li {
+    font-size: 1rem;
+    margin-left: 10%;
+  }
+  .nabizena-pozice__text-section h1 {
+    font-size: 2.5rem;
+  }
+  .nabizena-pozice__text-section ul li {
     font-size: 1rem;
     margin-left: 10%;
   }
